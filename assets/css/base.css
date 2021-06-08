@@ -68,7 +68,10 @@ span, p{
     width: 83%;
     
 }
-
+.box{
+    border: 1px solid rgba(116,152,189,.35);
+    border-radius: 5px;
+}
 @keyframes fadeIn{
     from{
         opacity: 0;

@@ -693,14 +693,15 @@ option{
 .box-news{
     margin-top: 20px;
     display: flex;
+    justify-content: space-between;
 }
 .box-news-list{
     display: flex;
     width: 547px;
     padding-right: 15px;
-    padding-bottom: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     border-bottom: 1px rgb(221, 218, 218) solid;
+    height: 155px;
 }
 .box-title{
     color: #000;
@@ -741,8 +742,164 @@ option{
 .news-vietlott{
     background-image: linear-gradient(to top,transparent,rgba(240,240,240,.7));
     padding: 22.85px 20px;
-    border: 1px solid rgba(116,152,189,.35);
-    border-radius: 5px;
     height: 148px;
     margin-bottom: 6px;
+}
+
+.box-noithang{
+    width: 258px;
+    border: 1px solid rgba(116,152,189,.35);
+    border-radius: 5px;
+    height: 271px;
+}
+.noithang-header{
+    padding: 12px 20px 0 20px;
+    display: flex;
+    justify-content:space-between;
+}
+.noithang-title{
+    color: #147ade;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 10px;
+}
+.noithang-title-icon::before{
+    content: '';
+    background-image: url(https://static.mediacdn.vn/nld/web_images/spritesV8.png);
+    display: block;
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-top: 2px;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+    background-position: -544px -78px;
+}
+.noithang-title-icon::after{
+    content: '';
+    font-weight: 600;
+    position: absolute;
+    background: blue;
+    display: block;
+    width: 28px;
+    height: 2px;
+    bottom: 0px;
+    left: 0;
+}
+.noithang-all{
+    color: rgb(185, 184, 184);
+    font-size: 11px;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 4px;
+}
+.news-item{
+    padding: 20px 20px 15px;
+    background-image: linear-gradient(to top,transparent,rgba(240,240,240,.7));
+}
+.news-item-title{
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 10px;
+    color: #000;
+}
+.box-content{
+    margin-top: 10px;
+
+}
+
+.box-content-lnik{
+    color: #147ade;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 10px;
+}
+.header-cate{
+    padding: 12px 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-cate-content{
+    padding: 5px 10px;
+    background: #147ade;
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+.header-cate-content::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5.5px 0 5.5px;
+    border-color: #147ade transparent transparent transparent;
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 20px;
+}
+.title{
+
+    color: #fff;
+    padding-bottom: 0;
+}
+.view-more{
+    color: rgb(185, 184, 184);
+    font-size: 11px;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 8px;
+}
+.new-items{
+    padding: 20px 20px 15px;
+    background-image: linear-gradient(to top,transparent,rgba(240,240,240,.7));
+}
+.new-items-link{
+    position: relative;
+    display: block;
+    width: 216px;
+    height: 133px;
+}
+.new-items-link::before{
+    content: '';
+    background-image: url(https://static.mediacdn.vn/nld/Images/iconplayvideo.jpg);
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 18px;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+}
+.new-items-title{
+    margin: 0;
+    font-weight: 600;
+    font-size: 17px;
+    /* color: #333; */
+    margin-top: 17px;
+}
+.new-items-title a{
+    color: #333;
+}
+.news-info{
+    margin-left: 15px;
+    margin-bottom: 10x;
+}
+.icon-comment{
+    background-image: url(https://static.mediacdn.vn/nld/web_images/spritesV8.png);
+    display: block;
+    background-repeat: no-repeat;
+    background-position: -312px -82px;
+    width: 12px;
+    height: 12px;
+    float: left;
+    margin-right: 4px;
 }
