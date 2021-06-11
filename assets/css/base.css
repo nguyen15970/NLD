@@ -13,11 +13,12 @@
 }
 *{
     box-sizing: inherit;
-    font-family: Roboto-Bold;
+    font-family: 'Roboto';
 } 
 a{
     text-decoration: none;
 }  
+
 li{
     list-style: none;
 }
@@ -26,6 +27,7 @@ html{
     line-height: 1,6rem;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+    
 }
 body{
     margin: 0;
@@ -36,9 +38,30 @@ span, p{
     margin: 0;
     padding: 0;
 }
+h3{
+    margin: 0;
+}
+h2{
+    margin: 0;
+    padding: 0;
+}
 /* Reponsive */
+
+.column-left{
+    width: 71.55%;
+}
+.column-right{
+    width: 25.86px;
+}
+.column-left-left{
+    width: 65.9%;
+}
+.column-left-right{
+    width: 31.08%;
+}
+
 .grid{
-    width: 1200px;
+    width: 1160;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -48,8 +71,7 @@ span, p{
 .grid_row{
     display: flex;
     flex-wrap: wrap;
-    margin-left: -5px;
-    margin-right: -5px;
+
 }
 .grid-columm-2{
     padding-right: 5px;
@@ -66,11 +88,171 @@ span, p{
     padding-right: 5px;
     padding-left: 5px;
     width: 83%;
-    
 }
 .box{
     border: 1px solid rgba(116,152,189,.35);
     border-radius: 5px;
+}
+
+/* box case */
+.box-case{
+    width: 100%;
+    margin-top: 15px;
+    padding: 28px 20px 20px 18px;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-top: 6px solid #ddd;
+    border-radius: 6px 6px 5px 5px;
+    margin-bottom: 30px;
+}   
+.box-case-title{
+    display: flex;
+    margin-bottom: 10px;
+}
+.box-case-title h2{
+    margin-top: 4px;
+}
+.box-case-title h2>a {
+    color: #197ade;
+    font-size: 19px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.box-case-list{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.box-case-item{
+    text-decoration: none;
+    margin-bottom: 2px;
+}
+.box-case-item a{
+    color: #000;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.box-case-content{
+    display: flex;
+}
+
+    /* box case left */
+.box-case-left{
+    width: 257px;
+    margin-right: 16px;
+}
+.box-case-left h3{
+    margin-top: 5px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.box-case-left h3>a{
+    color: #333;
+    text-decoration: none;
+}
+.box-case-left p{
+    font-size: 1.3rem;
+    font-weight: 500;
+    word-spacing:2px;
+    color: #000;
+}
+
+    /* box case center */
+.box-case-center{
+    padding-left: 17px;
+    padding-right: 17px;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    width: 274px;
+    height: 100%;
+}
+.box-case-center-list{
+    padding: 0;
+    width: 238px;
+    margin: 0;
+}
+.box-case-center-item{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 18px;
+    border-bottom:1px  solid #ddd ;
+}
+.box-case-center-item:nth-child(2){
+    padding:14px 0 18px 0;
+}
+.box-case-center-item:nth-child(3){
+    padding:14px 0 18px 0;
+    border: none;
+}
+.box-case-center-item a> img{
+    margin-right: 10px;
+}
+.box-case-center-item a>p{
+    color: #000;
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 16px;
+}
+
+    /* box case right */
+.box-case-right{
+    width: 208px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+.box-case-right-title{
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+    line-height: 1.37px;
+    top: 10px;
+    margin-bottom: 13px;
+}
+.box-case-right-title::before{
+    width: 3px;
+    height: 14px;
+    float: left;
+    background: #e02b2b;
+    content: '';
+    margin-right: 14px;
+    margin-top: -1px
+}
+.box-case-right-img{
+    position: relative;
+}
+
+.box-case-right-content{
+    position: relative;
+    top: -16px;
+}
+.box-case-right-content a{
+    display: block;
+    background: #fff;
+    padding: 13px 12px 11px 0;
+    width: 174px;
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.29;
+    text-transform: none;
+}
+.box-case-right-content {
+    font-size: 1.2rem;
+    font-weight: 550;
+    color: #000;
+}.box-box-case-title{
+    justify-content: space-between;
+}
+.box-box-case-list{
+    flex: none;
+}
+.box-box-case-item{
+    margin-right: 30px;
 }
 @keyframes fadeIn{
     from{
