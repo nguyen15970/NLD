@@ -13,6 +13,16 @@
     <link rel="stylesheet" href="./assets/fontf/fontawesome-free-5.15.1-web/fontawesome-free-5.15.1-web/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/js/js.js">
+    <style>
+        .sticky {
+             position: fixed;
+                top: 0;
+                width: 100%;
+                z-index: 9999;
+}
+
+    </style>
 </head>
 <body>
     <div class="app">
@@ -97,10 +107,10 @@
             </div>
             
             <!-- menu -->
-            <div class="header-menu">
+            <div class="header-menu" id="myHeader">
                 <ul class="menu-list">
                     <li class="menu-item active">
-                        <a href="#" title="Trang chủ" class="menu-home-href"><span class="menu-home"></span></a>
+                        <a href="#" title="Trang chủ" class="menu-home-icon"><span class="menu-home"></span></a>
                     </li>
                     <li class="menu-item"><a class="menu-item-link" href="#">Trong nước</a></li>
                     <li class="menu-item"><a class="menu-item-link" href="#">Quốc tế</a></li>
@@ -118,7 +128,7 @@
                     <li class="menu-item"><a class="menu-item-link" href="#">Phụ nữ</a></li>
                     <li class="menu-item"><a class="menu-item-link" href="#">Địa ốc</a></li>
                     <li class="search ">
-                        <a href="#" class="seach-link" title="Tìm kiếm" ></a>
+                        <a href="" class="seach-link" title="Tìm kiếm" ></a>
                         <input type="text" id="txtKeyWord" class="search-input" placeholder="Nhập từ khóa tìm kiếm">
                     </li>
                 </ul>
@@ -427,7 +437,40 @@
                             </div>
                         </div>
                         <div class="box-news-right">
-                            <div class="box news-vietlott">                       
+                            <div class="box news-vietlott">       
+                                <div class="news-vietlott-header">
+                                    <p>Kết quả xổ số tự chọn</p>
+                                    <img alt="xổ số vietlott" src="https://static.mediacdn.vn/nld/web_images/logovietlott-nbg.png">
+                                </div>
+                                <div class="box-vietlott">
+                                    <div class="vietloot-slider">
+                                        <div class="swiper-slide">
+                                            <span >Mega 6/45 kỳ 00753 - 11/06/2021</span>
+                                           
+                                            <ul style="margin: 0; padding: 0; margin-bottom:10px ;"><li>08</li><li>12</li><li>13</li><li>14</li><li>32</li><li>40</li></ul>
+                                            <div class="vietlott-value">
+                                                <span>Jackpot: </span>
+                                                <p>
+                                                    <span >13.438.632.000</span> 
+                                                    <span class="price">VND</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <span >Mega 6/45 kỳ 00753 - 11/06/2021</span>
+                                           
+                                            <ul style="margin: 0; padding: 0; margin-bottom:10px ;"><li>08</li><li>12</li><li>13</li><li>14</li><li>32</li><li>40</li></ul>
+                                            <div class="vietlott-value">
+                                                <span>Jackpot: </span>
+                                                <p>
+                                                    <span >13.438.632.000</span> 
+                                                    <span class="price">VND</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a rel="nofollow" class="vietlott-link" href="https://vietlott.vn/">Xem kết quả Max 3D, Max 4D tại đây</a>
                             </div>
                             <div class="box box-noithang">
                                 <div class="noithang-header">
@@ -884,7 +927,7 @@
 
                             <div class="box-case-right">
                                 <div style="margin-bottom: 30px;">
-                                    <a href="/#" title="Câu chuyện hôm nay" class="box-case-right-title">Câu chuyện hôm nay</a>
+                                    <a href="/#" title="Câu chuyện hôm nay" class="box-case-right-title">Vấn đề nóng</a>
                                 </div>
                                 <a class="" href="#"><img class="box-case-right-img" src="https://nld.mediacdn.vn/zoom/208_130/291774122806476800/2021/6/11/photo-1-1623370651788994968456.jpg" alt=""></a>
                                 <div class="box-case-right-content">
@@ -946,7 +989,7 @@
 
                             <div class="box-case-right">
                                 <div style="margin-bottom: 30px;">
-                                    <a href="/#" title="Câu chuyện hôm nay" class="box-case-right-title">Câu chuyện hôm nay</a>
+                                    <a href="/#" title="Câu chuyện hôm nay" class="box-case-right-title">Chính sách</a>
                                 </div>
                                 <a class="" href="#"><img class="box-case-right-img" src="https://nld.mediacdn.vn/zoom/208_130/291774122806476800/2021/6/8/screen-shot-2021-06-08-at-100408-pm-16231646736741445181430.png" alt=""></a>
                                 <div class="box-case-right-content">
@@ -1010,7 +1053,7 @@
 
                             <div class="box-case-right">
                                 <div style="margin-bottom: 30px;">
-                                    <a href="/#" title="Câu chuyện hôm nay" class="box-case-right-title">Câu chuyện hôm nay</a>
+                                    <a href="/#" title="Câu chuyện hôm nay" class="box-case-right-title">Dư luận</a>
                                 </div>
                                 <a class="" href="#"><img class="box-case-right-img" src="https://nld.mediacdn.vn/zoom/208_130/291774122806476800/2021/6/10/atm-16232853906231267307526.jpg" alt=""></a>
                                 <div class="box-case-right-content">
@@ -1073,7 +1116,7 @@
                             </div>
                             <div class="box-case-right">
                                 <div style="margin-bottom: 30px;">
-                                    <a href="/#" title="Câu chuyện hôm nay" class="box-case-right-title">Câu chuyện hôm nay</a>
+                                    <a href="/#" title="Câu chuyện hôm nay" class="box-case-right-title">Tài chính - Địa ốc</a>
                                 </div>
                                 <a class="" href="#"><img class="box-case-right-img" src="https://nld.mediacdn.vn/zoom/208_130/291774122806476800/2021/5/4/photo-1-16201076019821877688642.jpg" alt=""></a>
                                 <div class="box-case-right-content">
@@ -1136,7 +1179,7 @@
                             </div>
                             <div class="box-case-right">
                                 <div style="margin-bottom: 30px;">
-                                    <a href="/#" title="Câu chuyện hôm nay" class="box-case-right-title">Câu chuyện hôm nay</a>
+                                    <a href="/#" title="Câu chuyện hôm nay" class="box-case-right-title">Bác sĩ của bạn</a>
                                 </div>
                                 <a class="" href="#"><img class="box-case-right-img" src="https://nld.mediacdn.vn/zoom/208_130/291774122806476800/2021/6/8/14-chot-16231629391791069462898.jpg" alt=""></a>
                                 <div class="box-case-right-content">
@@ -1197,7 +1240,7 @@
                             </div>
                             <div class="box-case-right">
                                 <div style="margin-bottom: 30px;">
-                                    <a href="/#" title="Câu chuyện hôm nay" class="box-case-right-title">Câu chuyện hôm nay</a>
+                                    <a href="/#" title="Câu chuyện hôm nay" class="box-case-right-title">Tuyển sinh</a>
                                 </div>
                                 <a class="" href="#"><img class="box-case-right-img" src="https://nld.mediacdn.vn/zoom/208_130/291774122806476800/2021/6/8/14-chot-16231629391791069462898.jpg" alt=""></a>
                                 <div class="box-case-right-content">
@@ -1259,7 +1302,7 @@
                             </div>
                             <div class="box-case-right">
                                 <div style="margin-bottom: 30px;">  
-                                    <a href="/#" title="Câu chuyện hôm nay" class="box-case-right-title">Câu chuyện hôm nay</a>
+                                    <a href="/#" title="Câu chuyện hôm nay" class="box-case-right-title">Kỳ án</a>
                                 </div>
                                 <a class="" href="#"><img class="box-case-right-img" src="https://nld.mediacdn.vn/zoom/208_130/2021/3/4/photo-1-16148205646751354721945.jpg" alt=""></a>
                                 <div class="box-case-right-content">
@@ -1316,14 +1359,14 @@
                                             <img src="https://nld.mediacdn.vn/zoom/114_71/291774122806476800/2021/6/11/1065547972628212950263862822560094412795726n-15936580144301480448225-16233841979901626805374.jpg" alt="123">
                                         </a>
                                         <a href="#" title=">Bị phạt tù về tội nhận hối lộ, cựu thanh tra viên xin hưởng án treo!">
-                                            <p title=">Bị phạt tù về tội nhận hối lộ, cựu thanh tra viên xin hưởng án treo!">>Bị phạt tù về tội nhận hối lộ, cựu thanh tra viên xin hưởng án treo!</p>
+                                            <p title=">Bị phạt tù về tội nhận hối lộ, cựu thanh tra viên xin hưởng án treo!">Bị phạt tù về tội nhận hối lộ, cựu thanh tra viên xin hưởng án treo!</p>
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="box-case-right">
                                 <div style="margin-bottom: 30px;">  
-                                    <a href="/#" title="Câu chuyện hôm nay" class="box-case-right-title">Câu chuyện hôm nay</a>
+                                    <a href="/#" title="Câu chuyện hôm nay" class="box-case-right-title">Chuyện của sao</a>
                                 </div>
                                 <a class="" href="#"><img class="box-case-right-img" src="https://nld.mediacdn.vn/zoom/208_130/2021/3/4/photo-1-16148205646751354721945.jpg" alt=""></a>
                                 <div class="box-case-right-content">
@@ -1377,7 +1420,7 @@
                                             <img src="https://nld.mediacdn.vn/zoom/114_71/291774122806476800/2021/6/11/1065547972628212950263862822560094412795726n-15936580144301480448225-16233841979901626805374.jpg" alt="123">
                                         </a>
                                         <a href="#" title=">Bị phạt tù về tội nhận hối lộ, cựu thanh tra viên xin hưởng án treo!">
-                                            <p title=">Bị phạt tù về tội nhận hối lộ, cựu thanh tra viên xin hưởng án treo!">>Bị phạt tù về tội nhận hối lộ, cựu thanh tra viên xin hưởng án treo!</p>
+                                            <p title=">Bị phạt tù về tội nhận hối lộ, cựu thanh tra viên xin hưởng án treo!">Bị phạt tù về tội nhận hối lộ, cựu thanh tra viên xin hưởng án treo!</p>
                                         </a>
                                     </li>
                                 </ul>
@@ -1450,7 +1493,7 @@
                     <!-- Công nghệ -->
                     <div class="box-case">
                         <div class="box-case-title box-box-case-title">
-                            <h2><a href="#" title="Trong nước">Công nghệ</a></h2>
+                            <h2 style="flex: 1;"><a href="#" title="Trong nước">Công nghệ</a></h2>
                             <ul class="box-case-list box-box-case-list">
                                 <li class="box-case-item box-box-case-item"><a  href="#">Thiết bị số</a></li>
                                 <li class="box-case-item box-box-case-item"><a href="#">Bảo mật</a></li>
@@ -1490,14 +1533,14 @@
                                             <img src="https://nld.mediacdn.vn/zoom/114_71/291774122806476800/2021/6/11/1065547972628212950263862822560094412795726n-15936580144301480448225-16233841979901626805374.jpg" alt="123">
                                         </a>
                                         <a href="#" title=">Bị phạt tù về tội nhận hối lộ, cựu thanh tra viên xin hưởng án treo!">
-                                            <p title=">Bị phạt tù về tội nhận hối lộ, cựu thanh tra viên xin hưởng án treo!">>Bị phạt tù về tội nhận hối lộ, cựu thanh tra viên xin hưởng án treo!</p>
+                                            <p title=">Bị phạt tù về tội nhận hối lộ, cựu thanh tra viên xin hưởng án treo!">Bị phạt tù về tội nhận hối lộ, cựu thanh tra viên xin hưởng án treo!</p>
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="box-case-right">
                                 <div style="margin-bottom: 30px;">  
-                                    <a href="/#" title="Câu chuyện hôm nay" class="box-case-right-title">Câu chuyện hôm nay</a>
+                                    <a href="/#" title="Câu chuyện hôm nay" class="box-case-right-title">Cư dân màng</a>
                                 </div>
                                 <a class="" href="#"><img class="box-case-right-img" src="https://nld.mediacdn.vn/zoom/208_130/2021/3/4/photo-1-16148205646751354721945.jpg" alt=""></a>
                                 <div class="box-case-right-content">
@@ -1553,14 +1596,14 @@
                                             <img src="https://nld.mediacdn.vn/zoom/114_71/291774122806476800/2021/6/11/1065547972628212950263862822560094412795726n-15936580144301480448225-16233841979901626805374.jpg" alt="123">
                                         </a>
                                         <a href="#" title=">Bị phạt tù về tội nhận hối lộ, cựu thanh tra viên xin hưởng án treo!">
-                                            <p title=">Bị phạt tù về tội nhận hối lộ, cựu thanh tra viên xin hưởng án treo!">>Bị phạt tù về tội nhận hối lộ, cựu thanh tra viên xin hưởng án treo!</p>
+                                            <p title=">Bị phạt tù về tội nhận hối lộ, cựu thanh tra viên xin hưởng án treo!">Bị phạt tù về tội nhận hối lộ, cựu thanh tra viên xin hưởng án treo!</p>
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="box-case-right">
                                 <div style="margin-bottom: 30px;">  
-                                    <a href="/#" title="Câu chuyện hôm nay" class="box-case-right-title">Câu chuyện hôm nay</a>
+                                    <a href="/#" title="Câu chuyện hôm nay" class="box-case-right-title">Ẩm thực</a>
                                 </div>
                                 <a class="" href="#"><img class="box-case-right-img" src="https://nld.mediacdn.vn/zoom/208_130/2021/3/4/photo-1-16148205646751354721945.jpg" alt=""></a>
                                 <div class="box-case-right-content">
@@ -1661,14 +1704,14 @@
                                             <img src="https://nld.mediacdn.vn/zoom/114_71/291774122806476800/2021/6/11/1065547972628212950263862822560094412795726n-15936580144301480448225-16233841979901626805374.jpg" alt="123">
                                         </a>
                                         <a href="#" title=">Bị phạt tù về tội nhận hối lộ, cựu thanh tra viên xin hưởng án treo!">
-                                            <p title=">Bị phạt tù về tội nhận hối lộ, cựu thanh tra viên xin hưởng án treo!">>Bị phạt tù về tội nhận hối lộ, cựu thanh tra viên xin hưởng án treo!</p>
+                                            <p title=">Bị phạt tù về tội nhận hối lộ, cựu thanh tra viên xin hưởng án treo!">Bị phạt tù về tội nhận hối lộ, cựu thanh tra viên xin hưởng án treo!</p>
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="box-case-right">
                                 <div style="margin-bottom: 30px;">  
-                                    <a href="/#" title="Câu chuyện hôm nay" class="box-case-right-title">Câu chuyện hôm nay</a>
+                                    <a href="/#" title="Câu chuyện hôm nay" class="box-case-right-title">VNNONEY</a>
                                 </div>
                                 <a class="" href="#"><img class="box-case-right-img" src="https://nld.mediacdn.vn/zoom/208_130/2021/3/4/photo-1-16148205646751354721945.jpg" alt=""></a>
                                 <div class="box-case-right-content">
@@ -1680,7 +1723,7 @@
                     </div>
 
                     <!-- Nhịp sống -->
-                    <div class="box-case">
+                    <div class="box-case" style="padding-bottom: 49px; margin-bottom: 0;">
                         <div class="box-case-title box-box-case-title">
                             <h2><a href="#" title="Trong nước">Nhịp sống</a></h2>
                             <ul class="box-case-list box-box-case-list">
@@ -1724,14 +1767,14 @@
                                             <img src="https://nld.mediacdn.vn/zoom/114_71/291774122806476800/2021/6/11/1065547972628212950263862822560094412795726n-15936580144301480448225-16233841979901626805374.jpg" alt="123">
                                         </a>
                                         <a href="#" title=">Bị phạt tù về tội nhận hối lộ, cựu thanh tra viên xin hưởng án treo!">
-                                            <p title=">Bị phạt tù về tội nhận hối lộ, cựu thanh tra viên xin hưởng án treo!">>Bị phạt tù về tội nhận hối lộ, cựu thanh tra viên xin hưởng án treo!</p>
+                                            <p title=">Bị phạt tù về tội nhận hối lộ, cựu thanh tra viên xin hưởng án treo!">Bị phạt tù về tội nhận hối lộ, cựu thanh tra viên xin hưởng án treo!</p>
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="box-case-right">
                                 <div style="margin-bottom: 30px;">  
-                                    <a href="/#" title="Câu chuyện hôm nay" class="box-case-right-title">Câu chuyện hôm nay</a>
+                                    <a href="/#" title="Câu chuyện hôm nay" class="box-case-right-title">Sự kiện doanh nghiệpk</a>
                                 </div>
                                 <a class="" href="#"><img class="box-case-right-img" src="https://nld.mediacdn.vn/zoom/208_130/2021/3/4/photo-1-16148205646751354721945.jpg" alt=""></a>
                                 <div class="box-case-right-content">
@@ -1748,13 +1791,89 @@
                 </div>
                 <!-- right -->
                 <div class="content-right">
-
                 </div>      
             </div> 
+
+            <div class="quangcao"></div>
         </div>
         <div class="footer">
+            <div class="header-menu footer-menu" >
+                <ul class="menu-list">
+                    <li class="menu-item ">
+                        <a href="#" title="Trang chủ" class="menu-home-href"><span class=""></span></a>
+                    </li>
+                    <li class="menu-item menu-item-footer"><a class="menu-item-link" href="#">Trong nước</a></li>
+                    <li class="menu-item menu-item-footer"><a class="menu-item-link" href="#">Quốc tế</a></li>
+                    <li class="menu-item menu-item-footer"><a class="menu-item-link" href="#">Công đoàn</a></li>
+                    <li class="menu-item menu-item-footer"><a class="menu-item-link" href="#">Bạn đọc</a></li>
+                    <li class="menu-item menu-item-footer"><a class="menu-item-link" href="#">Kinh tế</a></li>
+                    <li class="menu-item menu-item-footer"><a class="menu-item-link" href="#">Sức khỏe</a></li>
+                    <li class="menu-item menu-item-footer"><a class="menu-item-link" href="#">Giáo dục</a></li>
+                    <li class="menu-item menu-item-footer"><a class="menu-item-link" href="#">Pháp luật</a></li>
+                    <li class="menu-item menu-item-footer"><a class="menu-item-link" href="#">Văn nghệ</a></li>
+                    <li class="menu-item menu-item-footer"><a class="menu-item-link" href="#">Giải trí</a></li>
+                    <li class="menu-item menu-item-footer"><a class="menu-item-link" href="#">Thể thao</a></li>
+                    <li class="menu-item menu-item-footer"><a class="menu-item-link" href="#">Công nghệ</a></li>
+                    <li class="menu-item menu-item-footer"><a class="menu-item-link" href="#">Điểm đến</a></li>
+                    <li class="menu-item menu-item-footer"><a class="menu-item-link" href="#">Phụ nữ</a></li>
+                    <li class="menu-item menu-item-footer"><a class="menu-item-link" style="border: none;" href="#">Địa ốc</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <div class="footer-x">
+                    <div class="footer-content-left">
+                        <p class="footer-content-left-title">BÁO NGƯỜI LAO ĐỘNG ĐIỆN TỬ</p>
+                        <p class="footer-content-left-title-1">CƠ QUAN CHỦ QUẢN: THÀNH ỦY THÀNH PHỐ HỒ CHÍ MINH</p>
+                        <div class="manager">
+                            <p class="manager-content" style="width: 216px;">© Giấy phép số 115/GP- BTTTT cấp ngày 09 tháng 02 năm 2021 của Bộ Thông tin và Truyền thông</p>
+                            <ul style="margin: 0; padding: 0; margin-right: 22px;">
+                                <li class="manager-tem"><p>Tổng Biên tập: TÔ ĐÌNH TUÂN</p></li>
+                                <li class="manager-tem"><p>Phó Tổng Biên tập: DƯƠNG QUANG, BÙI THANH LIÊM</p></li>
+                                <li class="manager-tem"><p>Tổng Thư ký Tòa soạn: LÊ CƯỜNG</p></li>
+                            </ul>
+                       </div>
+                    </div>
+                    <div class="footer-content-center">
+                        <p class="footer-content-center-title">Trụ sở chính</p>
+                        <p class="footer-content-center-item" >127 Võ Văn Tần, Phường Võ Thị Sáu, Quận 3 - TPHCM</p>
+                        <p class="footer-content-center-item" >Điện thoại: 028-3930.6262 / 028-3930.5376</p>
+                        <p class="footer-content-center-item" >Fax: 028-3930.4707</p>
+                    </div>
+                    <div class="footer-content-right">
+                        <p class="footer-content-right-title">Liên hệ quảng cáo</p>
+                        <div style="display: flex;">
+                            <a  href="https://vccorp.vn/"title="Công ty cổ phần truyền thông VCCORP"></a>
+                            <div class="contact">
+                                <p>
+                                    doanhnghiep@admicro.vn
+                                </p>
+                                <p>
+                                    0942.86.11.33
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Bản quyền thuộc về Báo Người Lao Động. Các website khác đã được chúng tôi đồng ý cho khai thác thông tin, khi đăng lại phải ghi rõ nguồn: Theo Báo Người Lao Động (www.nld.com.vn).</p>
+            </div>
         </div>
     </div>
     
 </body>
+<script>
+
+window.onscroll = function() {myFunction()};
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
 </html>
