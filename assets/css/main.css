@@ -293,7 +293,7 @@
 
 /* body */
 .container{
-    width: 1160px;
+    max-width: 1160px;
     margin: 20px 94px;
     
 }
@@ -386,7 +386,7 @@
 .clearfix{
     border-radius: 5px 5px 5px 5px;
 }
-.tab-item {
+.tab-item1 {
     float: left;
     padding: 7px 19.6px 7px;
     color: #000;
@@ -394,6 +394,18 @@
     text-transform: uppercase;
     border-top: 4px solid #fff;
     border-radius: 4px 4px 0 0;
+}
+.tab-item2 {
+    float: left;
+    padding: 7px 19.6px 7px;
+    color: #000;
+    font: normal 14px/normal Roboto-Bold;
+    text-transform: uppercase;
+    border-top: 4px solid #fff;
+    border-radius: 4px 4px 0 0;
+}
+.tab-item2:focus ~ .scroll{
+    display: none;
 }
 .tab-item:first-child.active {
     border-top-color: #0959ab;
