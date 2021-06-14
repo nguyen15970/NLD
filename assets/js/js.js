@@ -1,13 +1,11 @@
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {myFunction()};
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.querySelector("header-menu").style.top = "0";
-    document.querySelector("header-menu").style.position = "flex";
-
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
   } else {
-    document.querySelector("header-menu").style.top = "0";
-    
-    document.querySelector("header-menu").style.position = "flex";
+    header.classList.remove("sticky");
   }
 }

@@ -254,6 +254,12 @@ h2{
 .box-box-case-item{
     margin-right: 30px;
 }
+.sticky {
+    position: fixed;
+       top: 0;
+       width: 100%;
+       z-index: 9999;
+}
 @keyframes fadeIn{
     from{
         opacity: 0;
