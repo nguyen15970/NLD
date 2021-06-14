@@ -1,0 +1,12 @@
+
+- Xem trên Database SQL Server
+- Xem file docs hướng dẫn của Web Service
+- Xem sơ code của Web Service
+- Xem qua basic về cách sử dụng Retrofit và GSon, EventBus
+- Xem qua cách mà android đang gọi api như thế nào ApiRequestService, ServiceApi
+
+#f8_html_css
+#f8_javascript_basic
+
+#f8_question
+#f8_show
