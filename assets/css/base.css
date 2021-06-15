@@ -1,15 +1,5 @@
 :root{
-    --white-color:#fff;
-    --black-color:#000;
-    --text-color:#333;
-    --primary-color-rgba:rgb(238, 77, 45);
-    --primary-color: hsl(10, 82%, 60%);
-    --boder-color:#dbdbdb;
-    --header-height:120px;
-    --navbar-height:30px;
-    --header-width_seach-height:calc(var(--header-height) - var(--navbar-height));
-    --star-gold-color:#FFce3e;
-    --header-sort-bar-height:46px
+    
 }
 *{
     box-sizing: inherit;
@@ -27,12 +17,14 @@ html{
     line-height: 1,6rem;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+    height: 100%;
     
 }
 body{
     margin: 0;
     box-sizing: border-box;
     padding: 0;
+    height: 100%;
 }
 span, p{
     margin: 0;
@@ -61,8 +53,7 @@ h2{
 }
 
 .grid{
-    width: 1160;
-    max-width: 100%;
+    max-width: 1160px;
     margin: 0 auto;
 }
 .grid_full-width{
@@ -268,32 +259,21 @@ h2{
     border-color: #ddd !important;
     background: #fff !important;
 }
-/* .tab-item1::after {
-    content: '';
-    width: 110px;
-    height: 15px;
-    position: absolute;
-    display: block;
-    left: 0;
-    bottom: -13px;
-    z-index: 1;
-    border-bottom: 1px solid #e9e9e9;
-    border-radius: 0 0 5px 0;
-    transform: rotate(180deg);
-} */
-/* .tab-item2::after {
-    content: '';
-    width: 152px;
-    height: 15px;
-    position: absolute;
-    display: block;
-    left: 0;
-    bottom: -13px;
-    z-index: 1;
-    border-bottom: 1px solid #e9e9e9;
-    border-radius: 0 0 5px 0;
-    transform: rotate(180deg);
-} */
+#myBtn{
+    background: url(https://static.mediacdn.vn/nld/web_images/scrollTotop.png) -4px -3px no-repeat;
+    width: 50px;
+    height: 50px;
+    opacity: .7;
+    position: fixed;
+    cursor: pointer;
+    bottom: 325px;
+    right: 20px;
+    -ms-filter: "alpha(opacity=50)";
+    filter: alpha(opacity=20);
+    -moz-opacity: .7;
+    -khtml-opacity: .7;
+    z-index: 9999;
+}
 @keyframes fadeIn{
     from{
         opacity: 0;

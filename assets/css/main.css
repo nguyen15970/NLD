@@ -205,7 +205,20 @@
 .menu-item{
     display: inline-block;
     line-height: 30px;
-    margin: 0 4px;
+    padding: 0 4px;
+}
+.menu-item:hover{
+    background-color: rgba(0,0,0,.2);;
+}
+.menu-item-link:first-child{
+    position: relative;
+    left: 0;
+    top: 1px;
+}
+.menu-item:first-child{
+    height: 30px;
+    background: rgba(0,0,0,.2);
+    width: 26px;
 }
 .menu-home-href{
     background: rgba(0,0,0,.2);
@@ -225,6 +238,11 @@
     text-transform: uppercase;
     font-weight: 600;
 }
+.menu-item-footer{
+    display: inline-block;
+    line-height: 30px;
+    padding: 0 4px;
+}
 .ad{
     height: 40px;
     margin-top: 23px;
@@ -242,7 +260,7 @@
     padding-right: 0;
     position: absolute;
     top: -1px;
-    left: 111px;
+    left: 33px;
     cursor: pointer;
 }
 .seach-link:focus{
@@ -275,7 +293,7 @@
     -webkit-transition: all .3s;
     -moz-transition: all .3s;  
     position: absolute;
-    left: -90px;
+    left: 56px;
     top: 0px;
     visibility: visible;
     opacity: 0;
@@ -333,21 +351,23 @@
     width: 71.55%;
     float: left;
 }
+.top-new{
+    width: 65.54%;
+}
 .hot-news1{
     display: flex;
+    width: 100%;
 }
 .top-new-link{
-    width: 544px;
     height: 340px;
 }
 .top-new-image{
-    /* width: 100%; */
+    width: 100%;
     display: block;
 }
 .gradient{
     background-image: linear-gradient(#ebebeb,rgba(235,235,235,0));
-    width: 
-    544px;
+    width: 100% !important;
 }
 .news-title{
     margin-left: 10px;
@@ -371,7 +391,7 @@
     font-weight: 600;
 }
 .list-new{
-    width: 257px;
+    width: 31.08%;
     margin-left: 28px;
 }
 .clearfix{
@@ -397,7 +417,7 @@
     height: 1px;
     background: #ddd;
     /* left: 0; */
-    bottom: 73px;
+    bottom: 272px;
     display: none;
 }
 #border2{
@@ -406,7 +426,7 @@
     height: 1px;
     background: #ddd;
     left: 786px;
-    bottom: 73px;
+    bottom: 272px;
 }
 .tab-item1-active{
     border-top: 4px solid #0959ab;
@@ -534,7 +554,6 @@
     margin: 0;
 }
 .news-horizontal-link{
-    width: 196px;
     height: 127px;
     display: block;
 }
@@ -553,7 +572,7 @@
 
 /* info */
 .info{
-    width: 830;
+    width: 100%;
     height: 90px;
     padding: 10px;
     border: 1px solid #ddd;
@@ -743,7 +762,6 @@ option{
 }
 .box-news-list{
     display: flex;
-    width: 547px;
     padding-right: 15px;
     margin-bottom: 10px;
     border-bottom: 1px rgb(221, 218, 218) solid;
@@ -765,7 +783,7 @@ option{
     margin-left: 27px;
     margin-bottom: 3px;
     display: block;
-    line-height: 22px;
+    line-height: 18px;
     word-wrap: break-word;
     position: relative;
 }
@@ -860,7 +878,7 @@ option{
     color: #333;
 }
 .box-noithang{
-    width: 258px;
+    width: 100%;
     border: 1px solid rgba(116,152,189,.35);
     border-radius: 5px;
     height: 271px;
@@ -1268,6 +1286,7 @@ option{
 }
 .box-longform-img{
     border-radius: 5px 5px 0 0;
+    width: 100%;
 }
 .longform-info{
     position: absolute;
@@ -1723,18 +1742,23 @@ option{
     color: #000;
     border-right: 1px solid #a1a1a1;
     padding-right: 8px;
+    font-size: 1.3rem;
+    font-weight: bold;
 }
-.menu-home-href span{
-    border-right: 1px solid #a1a1a1;
-    padding-right: 20px;
+
+.menu-item-footer:hover{
+    background: rgba(0,0,0,.2);
+}
+.menu-home-icon{
+    color: #fff;
+    font-size: 1.1rem;
+}
+.fa-home-footer{
+    color: blue;
+    font-size: 15px;
     position: relative;
-    bottom: -1px;
-    background-image: url(https://static.mediacdn.vn/nld/web_images/spritesV8.png);
-    display: block;
-    background-repeat: no-repeat;
-    background-position: -10px -134px;
-    width: 15px;
-    height: 13px;
+    left: 10px;
+    top: 1px;
 }
 .footer-content{
     padding-bottom: 30px;

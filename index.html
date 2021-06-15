@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Báo người lao động</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/main.css">
@@ -17,6 +16,7 @@
 </head>
 <body >
     <div class="app">
+        <div id="myBtn" onclick="topFunction()"  style="display: block; bottom: 33%;"></div>
         <!-- Header -->
         <div class="header">
             <!-- topbar -->
@@ -98,11 +98,12 @@
             </div>
             <!-- menu -->
             <div class="header-menu" id="myHeader">
+              <div>
                 <ul class="menu-list">
-                    <li class="menu-item ">
-                        <a href="#" title="Trang chủ" class="menu-home-icon"><span class="menu-home"></span></a>
+                    <li class="menu-item">
+                        <a href="#" title="Trang chủ" class="menu-item-link"><i class="fas fa-home menu-home-icon"></i></a>
                     </li>
-                    <li class="menu-item"><a class="menu-item-link" href="#">Trong nước</a></li>
+                    <li class="menu-item"><a class="menu-item-link" href="/NLD/quoc-te.html">Trong nước</a></li>
                     <li class="menu-item"><a class="menu-item-link" href="#">Quốc tế</a></li>
                     <li class="menu-item"><a class="menu-item-link" href="#">Công đoàn</a></li>
                     <li class="menu-item"><a class="menu-item-link" href="#">Bạn đọc</a></li>
@@ -122,6 +123,7 @@
                         <input type="text" id="seach" class="search-input" placeholder="Nhập từ khóa tìm kiếm">
                     </li>
                 </ul>
+              </div>
             </div>
         </div>
         <div class="ad">
@@ -172,11 +174,11 @@
                         </div>
                         <div class="list-new">
                             <div class="tabs clearfix">
-                                <a href="#" title="Tin nóng" class="tab-item1 tab-item1-active"   onclick="tabContentHot()">Tin nóng</a>
+                                <a href="javascript:;" title="Tin nóng" class="tab-item1 tab-item1-active"   onclick="tabContentHot()">Tin nóng</a>
                                 <span class="line-middle"></span>
-                                <span id="border1"></span>
-                                <a href="#" title="Tin mới" class="tab-item2"  onclick="tabContentNews()" >Tin mới</a>
-                                <span id="border2"></span>
+                                <div id="border1"></div>
+                                <a href="javascript:;" title="Tin mới" class="tab-item2"  onclick="tabContentNews()" >Tin mới</a>
+                                <div id="border2"></div>
                             </div>
                             <div class="tab-content">
                                 <div style="padding: 18px 0;">
@@ -800,7 +802,7 @@
                                 </div>
                                 <div class="news-item BDS">
                                     <a href="#" title="Đồng Nai chống dịch hay ngăn sông cấm chợ?" >
-                                        <img src="https://nld.mediacdn.vn/zoom/224_140/291774122806476800/2021/6/7/11-chot-11-1623072390176346088662.jpg" alt="Đồng Nai chống dịch hay ngăn sông cấm chợ?" > 
+                                        <img src="https://nld.mediacdn.vn/zoom/224_140/291774122806476800/2021/6/7/11-chot-11-1623072390176346088662.jpg" style="width: 100%;" alt="Đồng Nai chống dịch hay ngăn sông cấm chợ?" > 
                                     </a> 
                                     <h3 ><a class="" href="#"  title="Đồng Nai chống dịch hay ngăn sông cấm chợ?">Tiếp tục đấu giá hàng ngàn căn hộ ở Thủ Thiêm</a></h3>
                                 </div>
@@ -812,7 +814,7 @@
                                 </div>
                                 <div class="news-item BDS">
                                     <a href="#" title="Đồng Nai chống dịch hay ngăn sông cấm chợ?" >
-                                        <img src="https://nld.mediacdn.vn/zoom/224_140/291774122806476800/2021/6/5/10-anh-bai-chot-xe-6-6-162289815334981154407.jpg" alt="Đồng Nai chống dịch hay ngăn sông cấm chợ?" > 
+                                        <img style="width: 100%;" src="https://nld.mediacdn.vn/zoom/224_140/291774122806476800/2021/6/5/10-anh-bai-chot-xe-6-6-162289815334981154407.jpg" alt="Đồng Nai chống dịch hay ngăn sông cấm chợ?" > 
                                     </a> 
                                     <h3 ><a class="" href="#"  title="Đồng Nai chống dịch hay ngăn sông cấm chợ?">Xe cũ sẽ được thu hồi, tái chế</a></h3>
                                 </div>
@@ -824,7 +826,7 @@
                                 </div>
                                 <div class="news-item BDS">
                                     <a href="#" title="Đồng Nai chống dịch hay ngăn sông cấm chợ?" >
-                                        <img src="https://nld.mediacdn.vn/zoom/224_140/291774122806476800/2021/6/8/anh-1-16231557425701122337418.jpg" alt="Đồng Nai chống dịch hay ngăn sông cấm chợ?" > 
+                                        <img  style="width: 100%;" src="https://nld.mediacdn.vn/zoom/224_140/291774122806476800/2021/6/8/anh-1-16231557425701122337418.jpg" alt="Đồng Nai chống dịch hay ngăn sông cấm chợ?" > 
                                     </a> 
                                     <h3 ><a class="" href="#"  title="Đồng Nai chống dịch hay ngăn sông cấm chợ?">Giải bài toán xử lý nước thải đô thị</a></h3>
                                 </div>
@@ -1882,24 +1884,26 @@
         <div class="footer">
             <div class="header-menu footer-menu" >
                 <ul class="menu-list">
-                    <li class="menu-item ">
-                        <a href="#" title="Trang chủ" class="menu-home-href"><span class=""></span></a>
+                    <li class="menu-item-footer" style="width: 38px;">
+                        <a href="#" title="Trang chủ" class="" style="padding-right: 24px;">
+                            <i class="fas fa-home fa-home-footer"></i>
+                        </a>
                     </li>
-                    <li class="menu-item menu-item-footer"><a class="menu-item-link" href="#">Trong nước</a></li>
-                    <li class="menu-item menu-item-footer"><a class="menu-item-link" href="#">Quốc tế</a></li>
-                    <li class="menu-item menu-item-footer"><a class="menu-item-link" href="#">Công đoàn</a></li>
-                    <li class="menu-item menu-item-footer"><a class="menu-item-link" href="#">Bạn đọc</a></li>
-                    <li class="menu-item menu-item-footer"><a class="menu-item-link" href="#">Kinh tế</a></li>
-                    <li class="menu-item menu-item-footer"><a class="menu-item-link" href="#">Sức khỏe</a></li>
-                    <li class="menu-item menu-item-footer"><a class="menu-item-link" href="#">Giáo dục</a></li>
-                    <li class="menu-item menu-item-footer"><a class="menu-item-link" href="#">Pháp luật</a></li>
-                    <li class="menu-item menu-item-footer"><a class="menu-item-link" href="#">Văn nghệ</a></li>
-                    <li class="menu-item menu-item-footer"><a class="menu-item-link" href="#">Giải trí</a></li>
-                    <li class="menu-item menu-item-footer"><a class="menu-item-link" href="#">Thể thao</a></li>
-                    <li class="menu-item menu-item-footer"><a class="menu-item-link" href="#">Công nghệ</a></li>
-                    <li class="menu-item menu-item-footer"><a class="menu-item-link" href="#">Điểm đến</a></li>
-                    <li class="menu-item menu-item-footer"><a class="menu-item-link" href="#">Phụ nữ</a></li>
-                    <li class="menu-item menu-item-footer"><a class="menu-item-link" style="border: none;" href="#">Địa ốc</a></li>
+                    <li class="menu-item-footer"><a class="" href="#">Trong nước</a></li>
+                    <li class="menu-item-footer"><a class="" href="#">Quốc tế</a></li>
+                    <li class="menu-item-footer"><a class="" href="#">Công đoàn</a></li>
+                    <li class="menu-item-footer"><a class="" href="#">Bạn đọc</a></li>
+                    <li class="menu-item-footer"><a class="" href="#">Kinh tế</a></li>
+                    <li class="menu-item-footer"><a class="" href="#">Sức khỏe</a></li>
+                    <li class="menu-item-footer"><a class="" href="#">Giáo dục</a></li>
+                    <li class="menu-item-footer"><a class="" href="#">Pháp luật</a></li>
+                    <li class="menu-item-footer"><a class="" href="#">Văn nghệ</a></li>
+                    <li class="menu-item-footer"><a class="" href="#">Giải trí</a></li>
+                    <li class="menu-item-footer"><a class="" href="#">Thể thao</a></li>
+                    <li class="menu-item-footer"><a class="" href="#">Công nghệ</a></li>
+                    <li class="menu-item-footer"><a class="" href="#">Điểm đến</a></li>
+                    <li class="menu-item-footer"><a class="" href="#">Phụ nữ</a></li>
+                    <li class="menu-item-footer"><a class="" style="border: none;" href="#">Địa ốc</a></li>
                 </ul>
             </div>
             <div class="footer-content">
@@ -1951,12 +1955,28 @@
 window.onscroll = function() {myFunction()};
 var header = document.getElementById("myHeader");
 var sticky = header.offsetTop;
+var mybutton = document.getElementById("myBtn");
+
+
 function myFunction() {
+    // menu-header
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
   } else {
     header.classList.remove("sticky");
   }
+  //button back to top
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+
+
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 
 
@@ -2006,12 +2026,7 @@ function tabContentHot(){
 
     elment5.setAttribute("style","display:none")
     elment6.setAttribute("style","display:block")
-
-
-
-
 }
-
 
 </script>
 </html>
