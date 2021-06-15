@@ -15,7 +15,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="./assets/js/js.js">
 </head>
-<body>
+<body >
     <div class="app">
         <!-- Header -->
         <div class="header">
@@ -99,7 +99,7 @@
             <!-- menu -->
             <div class="header-menu" id="myHeader">
                 <ul class="menu-list">
-                    <li class="menu-item active">
+                    <li class="menu-item ">
                         <a href="#" title="Trang chủ" class="menu-home-icon"><span class="menu-home"></span></a>
                     </li>
                     <li class="menu-item"><a class="menu-item-link" href="#">Trong nước</a></li>
@@ -118,8 +118,8 @@
                     <li class="menu-item"><a class="menu-item-link" href="#">Phụ nữ</a></li>
                     <li class="menu-item"><a class="menu-item-link" href="#">Địa ốc</a></li>
                     <li class="search ">
-                        <a href="#" class="seach-link" title="Tìm kiếm" ></a>
-                        <input type="text" id="txtKeyWord" class="search-input" placeholder="Nhập từ khóa tìm kiếm">
+                        <span  class="seach-link"  onclick="seachFunction()" ondblclick="stopSeach()" id="mySeach" ></span>
+                        <input type="text" id="seach" class="search-input" placeholder="Nhập từ khóa tìm kiếm">
                     </li>
                 </ul>
             </div>
@@ -127,7 +127,7 @@
         <div class="ad">
         </div>
         <!-- Body -->
-        <div class="container">
+        <div class="container" onclick="stopSeach()">
             <div class="container-new">
                 <div class="container-time">
                     Thứ Năm, Ngày 27 tháng 5 năm 2021
@@ -172,13 +172,15 @@
                         </div>
                         <div class="list-new">
                             <div class="tabs clearfix">
-                                <a href="#" title="Tin nóng" class="tab-item1 active" >Tin nóng</a>
+                                <a href="#" title="Tin nóng" class="tab-item1 tab-item1-active"   onclick="tabContentHot()">Tin nóng</a>
                                 <span class="line-middle"></span>
-                                <a href="" title="Tin mới" class="tab-item2"  style="width: 113px; text-align: center;">Tin mới</a>
+                                <span id="border1"></span>
+                                <a href="#" title="Tin mới" class="tab-item2"  onclick="tabContentNews()" >Tin mới</a>
+                                <span id="border2"></span>
                             </div>
                             <div class="tab-content">
                                 <div style="padding: 18px 0;">
-                                    <div class="scroll" >
+                                    <div class="scroll scroll1" >
                                         <div class="item-news-thumb">
                                                 <a class="item-news-link" href="/giao-duc-khoa-hoc/ha-noi-lui-lich-thi-giam-thoi-gian-lam-bai-thi-vao-lop-10-20210602185820355.htm" title="Hà Nội lùi lịch thi, giảm thời gian làm bài thi vào lớp 10" >Hà Nội lùi lịch thi, giảm thời gian làm bài thi vào lớp 10</a>
                                         </div>
@@ -223,6 +225,55 @@
                                         </div>
                                         <div class="item-news-thumb">
                                             <a class="item-news-link" href="/giao-duc-khoa-hoc/ha-noi-lui-lich-thi-giam-thoi-gian-lam-bai-thi-vao-lop-10-20210602185820355.htm" title="Hà Nội lùi lịch thi, giảm thời gian làm bài thi vào lớp 10" >Hà Nội lùi lịch thi, giảm thời gian làm bài thi vào lớp 10</a>
+                                        </div>
+
+                                        
+                                    </div>
+                                    <div class="scroll scroll2" >
+                                        <div class="item-news-thumb">
+                                                <a class="item-news-link" href="#" title="Lập lại trật tự cho bãi biển Hồ Tràm" >Lập lại trật tự cho bãi biển Hồ Tràm</a>
+                                        </div>
+                                            <div class="item-news-thumb">
+                                                <a class="item-news-link" href="#" title="Lập lại trật tự cho bãi biển Hồ Tràm" >Lập lại trật tự cho bãi biển Hồ Tràm</a>
+                                        </div>
+                                            <div class="item-news-thumb">
+                                                <a class="item-news-link" href="#" title="Lập lại trật tự cho bãi biển Hồ Tràm" >Lập lại trật tự cho bãi biển Hồ Tràm</a>
+                                        </div>
+                                            <div class="item-news-thumb">
+                                                <a class="item-news-link" href="#" title="Lập lại trật tự cho bãi biển Hồ Tràm" >Lập lại trật tự cho bãi biển Hồ Tràm</a>
+                                        </div>
+                                            <div class="item-news-thumb">
+                                                <a class="item-news-link" href="#" title="Lập lại trật tự cho bãi biển Hồ Tràm" >Lập lại trật tự cho bãi biển Hồ Tràm</a>
+                                        </div>
+                                            <div class="item-news-thumb">
+                                                <a class="item-news-link" href="#" title="Lập lại trật tự cho bãi biển Hồ Tràm" >Lập lại trật tự cho bãi biển Hồ Tràm</a>
+                                        </div>
+                                            <div class="item-news-thumb">
+                                                <a class="item-news-link" href="#" title="Lập lại trật tự cho bãi biển Hồ Tràm" >Lập lại trật tự cho bãi biển Hồ Tràm</a>
+                                        </div>
+                                        <div class="item-news-thumb">
+                                                <a class="item-news-link" href="#" title="Lập lại trật tự cho bãi biển Hồ Tràm" >Lập lại trật tự cho bãi biển Hồ Tràm</a>
+                                        </div>
+                                        <div class="item-news-thumb">
+                                                <a class="item-news-link" href="#" title="Lập lại trật tự cho bãi biển Hồ Tràm" >Lập lại trật tự cho bãi biển Hồ Tràm</a>
+                                        </div>
+                                        <div class="item-news-thumb">
+                                            <a class="item-news-link" href="#" title="Lập lại trật tự cho bãi biển Hồ Tràm" >Lập lại trật tự cho bãi biển Hồ Tràm</a>
+                                        </div>
+                                         <div class="item-news-thumb">
+                                                <a class="item-news-link" href="#" title="Lập lại trật tự cho bãi biển Hồ Tràm" >Lập lại trật tự cho bãi biển Hồ Tràm</a>
+                                        </div>
+                                        <div class="item-news-thumb">
+                                            <a class="item-news-link" href="#" title="Lập lại trật tự cho bãi biển Hồ Tràm" >Lập lại trật tự cho bãi biển Hồ Tràm</a>
+                                        </div>
+                                        <div class="item-news-thumb">
+                                            <a class="item-news-link" href="#" title="Lập lại trật tự cho bãi biển Hồ Tràm" >Lập lại trật tự cho bãi biển Hồ Tràm</a>
+                                        </div>
+                                        <div class="item-news-thumb">
+                                            <a class="item-news-link" href="#" title="Lập lại trật tự cho bãi biển Hồ Tràm" >Lập lại trật tự cho bãi biển Hồ Tràm</a>
+                                        </div>
+                                        <div class="item-news-thumb">
+                                            <a class="item-news-link" href="#" title="Lập lại trật tự cho bãi biển Hồ Tràm" >Lập lại trật tự cho bãi biển Hồ Tràm</a>
                                         </div>
 
                                         
@@ -1895,10 +1946,11 @@
     
 </body>
 <script>
+
+    // header
 window.onscroll = function() {myFunction()};
 var header = document.getElementById("myHeader");
 var sticky = header.offsetTop;
-
 function myFunction() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
@@ -1906,5 +1958,60 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
+
+
+// seach
+function seachFunction(){
+    var x =document.getElementById("seach")
+    x.classList.add("active"); 
+}
+
+ function stopSeach() {
+  var element = document.getElementById("seach");
+  element.classList.remove("active");
+}
+
+// tab content
+function tabContentNews(){
+    var element1 = document.querySelector(".scroll1")
+    var element2 = document.querySelector(".scroll2")
+
+    var element3=document.querySelector(".tab-item2")
+    var elemenr4=document.querySelector(".tab-item1")
+
+    var elment5= document.querySelector("#border1")
+    var elment6= document.querySelector("#border2")
+
+
+    element1.setAttribute("style","display:none;")
+    element2.setAttribute("style","display:block !important;")
+    element3.classList.add("tab-item2-active")
+    elemenr4.classList.remove("tab-item1-active")
+    elment5.setAttribute("style","display:block;")
+    elment6.setAttribute("style","display:none")
+}
+function tabContentHot(){
+    var element1 = document.querySelector(".scroll1")
+    var element2 = document.querySelector(".scroll2")
+    var element3=document.querySelector(".tab-item2")
+    var elemenr4=document.querySelector(".tab-item1")
+
+    var elment5= document.querySelector("#border1")
+    var elment6= document.querySelector("#border2")
+
+    element1.setAttribute("style","display:block;")
+    element2.setAttribute("style","display:none;")
+    element3.classList.remove("tab-item2-active");
+    elemenr4.classList.add("tab-item1-active")
+
+    elment5.setAttribute("style","display:none")
+    elment6.setAttribute("style","display:block")
+
+
+
+
+}
+
+
 </script>
 </html>

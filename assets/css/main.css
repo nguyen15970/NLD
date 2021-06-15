@@ -245,6 +245,9 @@
     left: 111px;
     cursor: pointer;
 }
+.seach-link:focus{
+    border-color: #fff;
+}
 .seach-link::before{
     content: '';
     background-image: url(https://static.mediacdn.vn/nld/web_images/spritesV8.png);
@@ -254,49 +257,37 @@
     width: 17px;
     height: 17px;
 }
-.seach-link:focus ~ .search-input{
-    display: block;
+/* .seach-link:focus ~ .search-input{
     width: 160px;
     visibility: visible;
     opacity: 1;
-}
+    display: block;
+    border-color: #ddd;
+    background: #fff;
+} */
 .search-input{
     width: 0;
-    display: none;
+    height: 29px;
     border-radius: 20px;
     font-size: 13px;
-    padding: #fff ;
     transition: all .3s;
+    border-color: transparent;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;  
     position: absolute;
     left: -90px;
-    top: 4px;
+    top: 0px;
     visibility: visible;
-    opacity: 1;
-}
-/* .search-input{
-    position: absolute;
-    right: 40px;
-    top: 3px;
-    width: 0;
-    transition: all .3s;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    border-radius: 20px;
-    border: none;
-    padding: 5px 10px;
-    outline: none;
-    visibility: hidden;
     opacity: 0;
-} */
-
+    background: transparent;
+}
 /* body */
 .container{
     max-width: 1160px;
     margin: 20px 94px;
     
 }
+
 .container-new{
     display: flex;
     justify-content: space-between;
@@ -386,23 +377,56 @@
 .clearfix{
     border-radius: 5px 5px 5px 5px;
 }
+.tabs{
+    display: flex;
+    justify-content: space-between;
+}
 .tab-item1 {
     float: left;
     padding: 7px 19.6px 7px;
     color: #000;
-    font: normal 14px/normal Roboto-Bold;
+    font-size: 14px;
+    font-weight: bold;
     text-transform: uppercase;
-    border-top: 4px solid #fff;
     border-radius: 4px 4px 0 0;
+    position: relative;
+}
+#border1{
+    position: absolute;
+    width: 117px;
+    height: 1px;
+    background: #ddd;
+    /* left: 0; */
+    bottom: 73px;
+    display: none;
+}
+#border2{
+    position: absolute;
+    width: 137px;
+    height: 1px;
+    background: #ddd;
+    left: 786px;
+    bottom: 73px;
+}
+.tab-item1-active{
+    border-top: 4px solid #0959ab;
+    border-left: 1px solid #ddd;
+}
+.tab-item2-active{
+    border-top: 4px solid #0959ab;
+    border-right: 1px solid #ddd;
 }
 .tab-item2 {
+    width: 152px;
     float: left;
     padding: 7px 19.6px 7px;
     color: #000;
-    font: normal 14px/normal Roboto-Bold;
+    font-size: 14px;
+    font-weight: bold;
     text-transform: uppercase;
-    border-top: 4px solid #fff;
     border-radius: 4px 4px 0 0;
+    position: relative;
+    top: -2px;
 }
 .tab-item2:focus ~ .scroll{
     display: none;
@@ -448,10 +472,15 @@
     touch-action: none;
     height: unset;
     overflow: unset;
+    position: relative;
+}
+.scroll2{
+    display: none;
+}
+.scroll1{
 }
 .scroll{
     overflow: hidden;
-    position: relative;
     width: auto;
     height: 404px;
     overflow-y: scroll;
