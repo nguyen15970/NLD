@@ -417,7 +417,7 @@
     height: 1px;
     background: #ddd;
     /* left: 0; */
-    bottom: 272px;
+    bottom: 285px;
     display: none;
 }
 #border2{
@@ -426,7 +426,7 @@
     height: 1px;
     background: #ddd;
     left: 786px;
-    bottom: 272px;
+    bottom: 285px;
 }
 .tab-item1-active{
     border-top: 4px solid #0959ab;

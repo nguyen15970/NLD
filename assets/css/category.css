@@ -1,9 +1,10 @@
 .app-content{
-    padding-top: 10px;   
+    margin: 40px;
+    height: 30%;
+    background: #fff;
 }
 .app-content-left{
     width: 69.82%;
-    height: 30px;
 }
 .app-content-left-title{
     width: 100%;
@@ -102,7 +103,6 @@
     border: 1px solid #eee;
     position: relative;
     top: 32px;
-    margin-bottom: 69px;
 }
 .app-news-container-right-item{
     list-style-type: none;
@@ -133,7 +133,6 @@
 .app-content-right{
     width: 25.86%;
     background: #e7e9ec;
-    min-height: 1000px;
 }
 .quangcao-right{
     margin-bottom: 20px;
@@ -175,6 +174,12 @@
     font-weight: bold;
     color: #000;
 }
-html{
-    height: 100%;
+.menu-home-category{
+    position: relative;
+    top: -11px;
+}
+.ad-footer{
+    margin: 40px 0;
+    height: 30px;
+    background: #fff;
 }
