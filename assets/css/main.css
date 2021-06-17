@@ -400,6 +400,7 @@
 .tabs{
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 .tab-item1 {
     float: left;
@@ -415,18 +416,18 @@
     position: absolute;
     width: 117px;
     height: 1px;
-    background: #ddd;
+    background: #ddd;   
     /* left: 0; */
-    bottom: 285px;
-    display: none;
+    bottom: 2px;
+    display: none; 
 }
 #border2{
     position: absolute;
     width: 137px;
     height: 1px;
     background: #ddd;
-    left: 786px;
-    bottom: 285px;
+    right:  0;
+    bottom: 2px;
 }
 .tab-item1-active{
     border-top: 4px solid #0959ab;
