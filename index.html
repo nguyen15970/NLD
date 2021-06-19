@@ -132,7 +132,7 @@
         <div class="ad">
         </div>
         <!-- Body -->
-        <div class="container" onclick="stopSeach()">
+        <div class="container">
             <div class="container-new">
                 <div class="container-time">
                     Thứ Năm, Ngày 27 tháng 5 năm 2021
@@ -1537,14 +1537,12 @@
                                     <li class="sport-title-item"><a href="#">Hậu trường</a></li>
                                 </ul>
                         </div>
-                        <div class="case-sport-schedule">
-                            
-
-                            <ul class="match-info">
-                                <li class="region">
+                        <ul class="case-sport-schedule">
+                            <li class="match-info">
+                                <div class="region">
                                     <a class="region-title" href="#">Seria A Brazil</a>
-                                </li>
-                                <li class="match-detail">
+                                </div>
+                                <div class="match-detail">
                                     <div class="team">
                                         <p class="date">CN 20/6</p>
                                         <img class="team-img" src="https://datasport.mediacdn.vn/season2018_logo/logo_seria_a_brazil_santos.jpg" >
@@ -1564,8 +1562,8 @@
                                             <a href="a:;" title="Santos">Sao Paulo</a>
                                         </p>
                                     </div>
-                                </li>
-                                <li class="match-detail">
+                                </div>
+                                <div class="match-detail">
                                     <div class="team">
                                         <p class="date">CN 20/6</p>
                                         <img class="team-img" src="https://datasport.mediacdn.vn/season2018_logo/logo_seria_a_brazil_cr_flamengo.jpg" >
@@ -1585,13 +1583,13 @@
                                             <a href="a:;" title="Sao Paulo">Sao Paulo</a>
                                         </p>
                                     </div>
-                                </li>
-                            </ul>
-                            <ul class="match-info">
-                                <li class="region">
+                                </div>
+                            </li>
+                            <li class="match-info">
+                                <div class="region">
                                     <a class="region-title" href="#">Seria A Brazil</a>
-                                </li>
-                                <li class="match-detail">
+                                </div>
+                                <div class="match-detail">
                                     <div class="team">
                                         <p class="date">CN 20/6</p>
                                         <img class="team-img" src="https://datasport.mediacdn.vn/season2018_logo/logo_seria_a_brazil_santos.jpg" >
@@ -1611,8 +1609,8 @@
                                             <a href="a:;" title="Santos">Sao Paulo</a>
                                         </p>
                                     </div>
-                                </li>
-                                <li class="match-detail">
+                                </div>
+                                <div class="match-detail">
                                     <div class="team">
                                         <p class="date">CN 20/6</p>
                                         <img class="team-img" src="https://datasport.mediacdn.vn/season2018_logo/logo_seria_a_brazil_cr_flamengo.jpg" >
@@ -1632,14 +1630,14 @@
                                             <a href="a:;" title="Sao Paulo">Sao Paulo</a>
                                         </p>
                                     </div>
-                                </li>
-                            </ul>
-                        </div>
+                                </div>
+                            </li>
+                        </ul>
                         <div class="btn-left">
-                            <span></span>
+                            <span  class="sport-slide" ></span>
                         </div>
-                        <div class="btn-right" onclick="btnright();">
-                            <span></span>
+                        <div class="btn-right">
+                            <span  class="sport-slide btn-active"></span>
                         </div>
                         <div class="box-sport-content">
                             <div class="sport-content-left">
@@ -1981,6 +1979,7 @@
                 </div>
                 <!-- right -->
                 <div class="content-right">
+                    
                 </div>      
             </div> 
 
@@ -2056,6 +2055,41 @@
 </body>
 <script src="./assets/js/js.js">
 
+</script>
+<script>
+    var  btnRight= document.querySelector(".btn-right");
+    var sliderSport = document.querySelectorAll('.match-info');
+    var  btnLeft= document.querySelector(".btn-left");
+    var l=0;
+    var x = document.querySelectorAll(".sport-slide");
+btnRight.onclick = ()=>{
+  l++;
+  for(var i of sliderSport){
+    if(l==0) {i.style.left="0px";}
+    if(l==1) {
+      i.style.left="-150px";
+      x[0].classList.add("btn-active")
+      x[1].classList.remove("btn-active")
+    }
+    
+    
+      if(l>1) {i=1}
+  }
+}
+btnLeft.onclick = ()=>{
+  l--;
+  for(var i of sliderSport){
+    if(l==0) {
+        i.style.left="0px";
+        x[0].classList.remove("btn-active")
+        x[1].classList.add("btn-active")
+    }
+    if(l==1) {
+      i.style.left="-150px";
+    }
 
+    if(l<0) {i=0}
+  }
+}
 </script>
 </html>

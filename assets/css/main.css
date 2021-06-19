@@ -1675,7 +1675,9 @@ option{
     top: 43px;
     left: 9px;
     opacity: .2;
-
+}
+.btn-active{
+    opacity: 1 !important;
 }
 .btn-right{
     position: absolute;
@@ -1700,13 +1702,15 @@ option{
     position: absolute;
     top: 43px;
     right: 9px;
-    opacity: 1;
+    opacity: .2;
 }
 .match-info{
     padding: 0;
     margin: 0;
     height: 86px;
     display: flex;
+    position: relative;
+    transform: 0.5s;
 }
 .region{
     border-bottom: 2px solid #3781d3;

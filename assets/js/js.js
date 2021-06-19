@@ -94,7 +94,7 @@ var slider = document.querySelectorAll('.box-category-dont-miss-info-item');
 var l=0;
 var bullet = document.querySelectorAll('.swiper-pagination-bullet')
 
-function sliderDetail(){
+btnNext.onclick = ()=>{
   l++;
   for(var i of slider){
     if(l==0) {i.style.left="0px";}

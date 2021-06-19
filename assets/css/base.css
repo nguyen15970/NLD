@@ -2,8 +2,7 @@
     
 }
 *{
-    box-sizing: inherit;
-    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: inherit;    
 } 
 a{
     text-decoration: none;
@@ -15,7 +14,7 @@ li{
 html{
     font-size: 62.5%;
     line-height: 1,6rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto';
     box-sizing: border-box;
     height: 100%;
     
