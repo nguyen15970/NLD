@@ -32,6 +32,13 @@
 .contact_right a{
     text-decoration: none;
 }
+.contact-icon{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    width: 345px;
+}
 /* .zalo-follow-only-button{
     height: 20px;
     overflow: hidden;
@@ -46,12 +53,21 @@
     padding: 0 12px;
     color: #000;
     font: 500 11px/normal Roboto-Medium;
-    float: left;
+    border-left: 1px solid  #d8d8d8;
+    border-right: 1px solid  #d8d8d8;
 
 }
 .icon-send{
     margin-right: 10px;
     float: left;
+}
+.youtube-link{
+    margin-top: 5px;
+}
+.icon-youtube{
+    color: red;
+    font-size: 15px;
+    padding: 0 10px;
 }
 /* a:first-child {
     padding: 0 12px;
@@ -61,16 +77,17 @@
     border-right-color: rgb(216, 216, 216);
     border-left: 1px solid #adaaaa;
 } */
-.icon-youtube{
- float: left;   
+.fb-link{
+    margin-top: 5px;
 }
 .icon-fb{
-    float: left;
+    line-height: 30px;
+    font-size: 15px;
+    color: blue;
+    padding-right: 10px;
+
 }
-.srr-link{
-    float: left;
-}
-.zb-btn-blue--small {
+.zb-logo-zalo{
     display: inline-block;
     background-color: #03a5fa;
     color: #fff;
@@ -79,6 +96,47 @@
     line-height: 20px;
     text-decoration: none;
     font-size: 11px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+}
+.zalo-span{
+    position: absolute;
+    right: 0;
+}
+.srr-link img{
+    margin-top: 7px;
+    width: 35px;
+    height: 15px;
+    margin-top: 11px;
+}
+.zalo-link {
+    display: inline-block;
+    background-color: #03a5fa;
+    color: #fff;
+    width: 87px;
+    height: 20px;
+    line-height: 20px;
+    text-decoration: none;
+    font-size: 11px;
+    position: relative;
+    margin-right: 10px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.zalo-icon{
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0.15em;
+    margin-right: 4px;
+    width: 14px;
+    height: 14px;
+    margin-left: 4px;
+    background: url(https://sp.zalo.me/static/follow/images/logo_white_s.png);
+}
+.zalo-span{
+    margin-right: 2px;
 }
 .content-header{
     width: 1160px;
@@ -234,7 +292,8 @@
 .menu-item-link{
     text-decoration: none;
     color: #fff;
-    font: normal 11px/normal Roboto-Medium;
+    font-size: 1.1rem;
+    font-weight: bold;
     text-transform: uppercase;
     font-weight: 600;
 }
@@ -403,10 +462,9 @@
     position: relative;
 }
 .tab-item1 {
-    float: left;
     padding: 7px 19.6px 7px;
     color: #000;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
     text-transform: uppercase;
     border-radius: 4px 4px 0 0;
@@ -1553,6 +1611,7 @@ option{
 .box-case-sport{
     width: 100%;
     margin-bottom: 30px;
+    position: relative;
 }
 .box-case-sport-title{
     display: flex;
@@ -1584,18 +1643,164 @@ option{
     margin-top: 4px;
 }
 .case-sport-schedule{
-    width: 768px;
+    height: 100%;
     border: 1px solid #ddd;
-    margin: 0 auto;
-    overflow: hidden;
+    overflow-x: visible;
     padding: 0;
-    z-index: 1;
+    z-index: 999;
     height: 87px;
-    background: #ccc;
+    margin: 0 30px;
+    overflow: hidden;
+    display: flex;
+}
+.btn-left{
+    position: absolute;
+    top: 43px;
+    left: 0px;
+    width: 31px;
+    height: 88px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.btn-left span{
+    background-image: url(https://static.mediacdn.vn/nld/web_images/spritesV8.png);
+    display: block;
+    background-repeat: no-repeat;
+    background-position: -275px -115px;
+    width: 8px;
+    height: 17px;
+    background-size: unset;
+    margin-top: -10px;
+    position: absolute;
+    top: 43px;
+    left: 9px;
+    opacity: .2;
+
+}
+.btn-right{
+    position: absolute;
+    top: 43px;
+    right: 0px;
+    width: 31px;
+    height: 88px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    z-index: 99999;
+
+}
+.btn-right span{
+    background-image: url(https://static.mediacdn.vn/nld/web_images/spritesV8.png);
+    display: block;
+    background-repeat: no-repeat;
+    background-position: -260px -115px;
+    width: 8px;
+    height: 17px;
+    background-size: unset;
+    margin-top: -10px;
+    position: absolute;
+    top: 43px;
+    right: 9px;
+    opacity: 1;
+}
+.match-info{
+    padding: 0;
+    margin: 0;
+    height: 86px;
+    display: flex;
+}
+.region{
+    border-bottom: 2px solid #3781d3;
+    width: 60px;
+    background: linear-gradient(to right,#f7f7f7 1%,transparent 99%);
+    list-style-type: none;
+    float: left;
+    border-right: 1px solid #ddd;
+    padding: 10px 12px;
+    width: 85px;
+}
+.region-title{
+    color: #0d95d4;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.25;
+    margin-bottom: 15px;
+    display: block;
+    height: 48px;
+    overflow: hidden;
+}
+.match-detail{
+    list-style-type: none;
+    float: left;
+    border-right: 1px solid #ddd;
+    padding: 9px 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.team{
+    float: left;
+    text-align: center;
+}
+.date{
+    color: #676767;
+    font-size: 1.1rem;
+    line-height: 1.27;
+    margin-bottom: 7px;
+}
+.team-img{
+    width: 20px;
+    height: 24px;
+    color: transparent;
+}
+.name{
+    margin-top: 7px;
+    width: 66px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.name a{
+    color: #404040;
+    font-size: 1.2rem;
+    line-height: 14px;
+}
+.separator{
+    width: 12px;
+    margin-left: 9px;
+    margin-right: 9px;
+    margin-top: 25px;
+}
+.dot-1{
+    width: 2px;
+    height: 2px;
+    background: #c5c5c5;
+    display: block;
+    margin: 0 auto 3px;
+}
+.dot-2{
+    width: 12px;
+    height: 2px;
+    background: #c5c5c5;
+    display: block;
+    margin: 0 auto 3px;
+}
+.dot-3{
+    width: 2px;
+    height: 2px;
+    background: #c5c5c5;
+    display: block;
+    margin: 0 auto 3px;
+}
+.left-btn{
+    width: 30px;
+    height: 88px;
+    float: left;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
 .box-sport-content{
     width: 100%;
-    padding:    15px 0 10px 18px;
+    padding:15px 0 10px 18px;
     padding-bottom: 10px;
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;

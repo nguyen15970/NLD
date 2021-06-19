@@ -29,15 +29,18 @@
                 </div>
                 <div class="contact_right">
                     <div class="contact-icon">
-                        <a href="" title="Gửi tin bài" class="send-news" rel="nofollow" target="_blank">
+                        <a href="#" title="Gửi tin bài" class="send-news">
                             <i class="icon-send fas fa-paper-plane"></i>GỬI TIN BÀI</a>
-                        <a href="" title="Youtube"target="_blank" rel="nofollow">
+                        <a href="#" title="Youtube" class="youtube-link">
                             <i class="icon-youtube fab fa-youtube"></i>
                         </a>
-                        <a href="" title="Facebook"target="_blank" rel="nofollow">
+                        <a href="#" title="Facebook" class="fb-link">
                             <i class="icon-fb fab fa-facebook"></i>
                         </a>
-                        
+                        <a  class="zalo-link">
+                            <i class="zalo-icon"></i>
+                            <span class="zalo-span">Đã quan tâm</span>
+                        </a>
                         <a class="srr-link" href="#" title="RSS" style="position: relative; top: px;">
                             <img  src="https://static.mediacdn.vn/nld/web_images/rss.jpg" ></a>
                     </div>
@@ -457,46 +460,6 @@
     </div>
 
 </body>
-<script>
-
-    // header
-window.onscroll = function() {myFunction()};
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-var mybutton = document.getElementById("myBtn");
-
-
-function myFunction() {
-    // menu-header
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-  //button back to top
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-
-
-}
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
-
-// seach
-function seachFunction(){
-    var x =document.getElementById("seach")
-    x.classList.add("active"); 
-}
-
- function stopSeach() {
-  var element = document.getElementById("seach");
-  element.classList.remove("active");
-}
+<script src="./assets/js/js.js">
 </script>
 </html>

@@ -3,7 +3,7 @@
 }
 *{
     box-sizing: inherit;
-    font-family: 'Roboto';
+    font-family: Arial, Helvetica, sans-serif;
 } 
 a{
     text-decoration: none;

@@ -1,4 +1,5 @@
-    // header
+
+// header
 window.onscroll = function() {myFunction()};
 var header = document.getElementById("myHeader");
 var sticky = header.offsetTop;
@@ -41,19 +42,6 @@ function seachFunction(){
   }
 }
 
-function stopSeach() {
-  var element = document.getElementById("seach");
-  element.classList.remove("active");
-}
-// 
-function  closeInput(){
-  var x= document.querySelector('input').getAttribute("class")
-  var y= x.lastIndexOf("active")
-  if(!(y===-1)){
-    var element = document.getElementById("seach");
-    element.classList.remove("active");
-}
-}
 
 // tab content
 function tabContentNews(){
@@ -91,3 +79,121 @@ function tabContentHot(){
   elment5.setAttribute("style","display:none")
   elment6.setAttribute("style","display:block")
 }
+
+
+// slider index.html
+
+
+
+
+// slider detail.html
+
+var  btnNext= document.querySelector(".button-next");
+var  btnPrev= document.querySelector(".button-prev");
+var slider = document.querySelectorAll('.box-category-dont-miss-info-item');
+var l=0;
+var bullet = document.querySelectorAll('.swiper-pagination-bullet')
+
+function sliderDetail(){
+  l++;
+  for(var i of slider){
+    if(l==0) {i.style.left="0px";}
+    if(l==1) {
+      i.style.left="-280px";
+      bullet[1].classList.add("swiper-pagination-bullet-active");
+      bullet[0].classList.remove("swiper-pagination-bullet-active");
+      btnPrev.classList.add("button-active")
+    }
+    if(l==2) {i.style.left="-550px";
+      bullet[2].classList.add("swiper-pagination-bullet-active");
+      bullet[1].classList.remove("swiper-pagination-bullet-active");
+    }
+    if(l==3) {
+      i.style.left="-820px";
+      bullet[3].classList.add("swiper-pagination-bullet-active");
+      bullet[2].classList.remove("swiper-pagination-bullet-active");
+    }
+    if(l==4) {
+      i.style.left="-1090px";
+      bullet[4].classList.add("swiper-pagination-bullet-active");
+      bullet[3].classList.remove("swiper-pagination-bullet-active");
+    }
+    if(l==5) {
+      i.style.left="-1360px";
+      bullet[5].classList.add("swiper-pagination-bullet-active");
+      bullet[4].classList.remove("swiper-pagination-bullet-active");
+    }
+    if(l==6) {
+      i.style.left="-1630px";
+      bullet[6].classList.add("swiper-pagination-bullet-active");
+      bullet[5].classList.remove("swiper-pagination-bullet-active");
+    }
+    if(l==7) {
+      i.style.left="-1900px";
+      bullet[7].classList.add("swiper-pagination-bullet-active");
+      bullet[6].classList.remove("swiper-pagination-bullet-active");
+    }
+    if(l==8) {
+      i.style.left="-2170px";
+      bullet[8].classList.add("swiper-pagination-bullet-active");
+      bullet[7].classList.remove("swiper-pagination-bullet-active");
+      btnNext.classList.remove("button-active")
+    }
+
+    if(l>8) {i=8}
+  }
+}
+
+
+btnPrev.onclick = ()=>{
+  l--;
+  for(var i of slider){
+      	if(l==0) {
+          i.style.left="0px";
+          bullet[0].classList.add("swiper-pagination-bullet-active");
+          bullet[1].classList.remove("swiper-pagination-bullet-active");
+          btnPrev.classList.remove("button-active")
+        }
+				if(l==1) {
+          i.style.left="-280px";
+          bullet[1].classList.add("swiper-pagination-bullet-active");
+          bullet[2].classList.remove("swiper-pagination-bullet-active");
+        }
+				if(l==2) {
+          i.style.left="-550px";
+          bullet[2].classList.add("swiper-pagination-bullet-active");
+          bullet[3].classList.remove("swiper-pagination-bullet-active");
+        }
+				if(l==3) {
+          i.style.left="-820px";
+          bullet[3].classList.add("swiper-pagination-bullet-active");
+          bullet[4].classList.remove("swiper-pagination-bullet-active");
+        }
+				if(l==4) {
+          i.style.left="-1090px";
+          bullet[4].classList.add("swiper-pagination-bullet-active");
+          bullet[5].classList.remove("swiper-pagination-bullet-active");
+          }
+				if(l==5) {
+          i.style.left="-1360px";
+          bullet[5].classList.add("swiper-pagination-bullet-active");
+          bullet[6].classList.remove("swiper-pagination-bullet-active");
+          }
+				if(l==6) {
+          i.style.left="-1630px";
+          bullet[6].classList.add("swiper-pagination-bullet-active");
+          bullet[7].classList.remove("swiper-pagination-bullet-active");
+        }
+				if(l==7) {
+          i.style.left="-1900px";
+          bullet[7].classList.add("swiper-pagination-bullet-active");
+          bullet[8].classList.remove("swiper-pagination-bullet-active");
+          btnNext.classList.add("button-active")
+        }
+        if(l==8) {
+          i.style.left="-2170px";
+        }
+        if(l<0) {i=0;}
+  }
+}
+
