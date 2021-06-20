@@ -197,3 +197,11 @@ btnPrev.onclick = ()=>{
   }
 }
 
+// audio
+var audio= document.getElementsByClassName("detail-share-micro-img");
+
+function Startaudio(){
+    document.querySelector(".detail-share-micro").setAttribute('style','display:none;')
+    document.querySelector(".detail-icon").setAttribute('style','justify-content: flex-end;')
+    document.querySelector(".audio").setAttribute('style','display:block !important')
+}

@@ -264,6 +264,7 @@
     display: inline-block;
     line-height: 30px;
     padding: 0 4px;
+    margin-right: 5px;
 }
 .menu-item:hover{
     background-color: rgba(0,0,0,.2);;
@@ -819,6 +820,9 @@ option{
     display: flex;
     justify-content: space-between;
 }
+.box-news-left{
+    width: 100%
+}
 .box-news-list{
     display: flex;
     padding-right: 15px;
@@ -857,7 +861,7 @@ option{
     top: 9px;
 }
 .box-news-right{
-    width: 258px;
+    width: 31.08%;
     height: 967px;
 }
 .news-vietlott{
@@ -989,6 +993,9 @@ option{
     padding: 20px 20px 15px;
     background-image: linear-gradient(to top,transparent,rgba(240,240,240,.7));
 }
+.news-item{
+    width: 100%;
+}
 .news-item-title{
     font-size: 17px;
     font-weight: 600;
@@ -1055,8 +1062,10 @@ option{
 .new-items-link{
     position: relative;
     display: block;
-    width: 216px;
     height: 133px;
+}
+.new-items-link img{
+    width: 100%;
 }
 .new-items-link::before{
     content: '';
@@ -1331,14 +1340,6 @@ option{
     width: 100px;
     left: 120px;
 }
-.content-right{
-    /* margin-left: 25px; */
-    width: 25.86%;
-    background: #dddddd;
-    width: 258px;
- 
-}
- 
 .box-longform{
     height: 288px;
     position: relative;
@@ -1479,7 +1480,10 @@ option{
 
 }
 .euro-content-right{
-    width: 294px;
+    width: 37.124%;
+}
+.euro-content-right img{
+    width: auto;
 }
 .euro-content-right-list{
     list-style: none;
@@ -1905,7 +1909,10 @@ option{
     justify-content: space-between;
 }
 .box-women-content-left{
-    width: 541px;
+    width: 65.62%;
+}
+.box-women-content-left img{
+    width: 100%;
 }
 .box-women-content-left h3 a{
     font-size: 24px;
@@ -1914,7 +1921,10 @@ option{
 }
 
 .box-women-content-right{
-    width: 231px;
+    width: 30.398%;
+}
+.box-women-content-right img{
+    width: 100%
 }
 .box-women-content-right-list{
     margin: 0;
@@ -2069,4 +2079,70 @@ option{
     font-size: 1.3rem;
     font-weight: bold;
     color: #000;
+}   
+        /* right */
+.content-right{
+    /* margin-left: 25px; */
+    width: 25.86%;
+}
+.content-right-ad{
+    width: 100%;
+    background: #ddd;
+    height: 250px;
+}
+.box-photo{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 100%;
+    margin-bottom:30px ;
+}
+.box-photo-title p{
+    height: 55px;
+    background: #f7f7f7;
+    margin-bottom: 10px;
+    padding: 19px 20px;
+    border-radius: 10px 10px 0 0;
+    color: #3c8ee3;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.12;
+    text-transform: uppercase;
+}
+.photo-content{
+    padding: 0 20px 19px;
+    border: none;
+}
+.row-content{
+    display: flex;
+
+}
+.row-content img{
+    width: 129px;
+    height: 107px;
+}
+.photo-content-link{
+    position: relative;
+}
+
+.photo-content-link::before{
+    content: '';
+    background-image: url(https://static.mediacdn.vn/nld/web_images/icon_imagem.png);
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    width: 25px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.photo-content-link-content{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    line-height: 1.4;
+    margin-top: 10px;
 }

@@ -11,6 +11,7 @@ a{
 li{
     list-style: none;
 }
+
 html{
     font-size: 62.5%;
     line-height: 1,6rem;
@@ -130,8 +131,11 @@ h2{
 
     /* box case left */
 .box-case-left{
-    width: 257px;
+    width: 32.533%;
     margin-right: 16px;
+}
+.box-case-left img{
+    width: 100%;
 }
 .box-case-left h3{
     margin-top: 5px;
@@ -158,10 +162,11 @@ h2{
     border-left: 1px solid #ddd;
     width: 274px;
     height: 100%;
+    width: 34.685%;
 }
 .box-case-center-list{
     padding: 0;
-    width: 238px;
+    width: auto;
     margin: 0;
 }
 .box-case-center-item{
@@ -189,7 +194,7 @@ h2{
 
     /* box case right */
 .box-case-right{
-    width: 208px;
+    width: 30.89%;
     padding-left: 18px;
     padding-right: 18px;
 }
@@ -214,6 +219,7 @@ h2{
 }
 .box-case-right-img{
     position: relative;
+    width: 100%
 }
 
 .box-case-right-content{
@@ -230,6 +236,7 @@ h2{
     font-weight: bold;
     line-height: 1.29;
     text-transform: none;
+    width: auto;
 }
 .box-case-right-content {
     font-size: 1.2rem;
@@ -237,9 +244,11 @@ h2{
     color: #000;
 }.box-box-case-title{
     justify-content: space-between;
+    width: auto;
 }
 .box-box-case-list{
     flex: none;
+   width: auto;
 }
 .box-box-case-item{
     margin-right: 30px;
