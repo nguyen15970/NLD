@@ -443,12 +443,11 @@
 .gradient p{
     padding-top: 10px;
     color: #000;
-    font: normal 13px/normal Roboto-Medium;
+    font-size: 1.3rem;
     line-height: 20px;
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    font-weight: 600;
 }
 .list-new{
     width: 31.08%;
