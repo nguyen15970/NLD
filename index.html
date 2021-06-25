@@ -85,7 +85,7 @@
                         </a>
                     </li>
                     <li class="item-topic">
-                        <a class="icon-link1" href="#" title="Tin độc quyền">
+                        <a class="icon-link1" href="#" 
                             <i class="icon-stars"></i>
                             Tin độc quyền
                         </a>
@@ -103,7 +103,22 @@
             </div>
             <!-- menu -->
             <div class="header-menu" id="myHeader">
-              <div>
+                <div class="menu-mb">
+                    <div class="menu-mb-icon">
+                        <div class="menu-mb-icon-item"></div>
+                        <div class="menu-mb-icon-item"></div>
+                        <div class="menu-mb-icon-item"></div>
+                    </div>
+                    <h1><a title="Người lao động mobile" class="fl logo" href="/">&nbsp;</a></h1>
+                    <div class="icon-item">
+                        <a href=""><i class="fab fa-facebook icon-menu-fb"></i></a>
+                        <a href=""><i class="fab fa-youtube icon-menu-youtube"></i></a>
+                        <li class="seach-mb">
+                            <span  class="seach-link-mb" onclick="seachFunctionMobile();"></span>
+                            <input type="text"  class="" id="search-input-mb" placeholder="Nhập từ khóa tìm kiếm">
+                        </li>
+                    </div>
+                </div>
                 <ul class="menu-list">
                     <li class="menu-item">
                         <a href="#" title="Trang chủ" class="menu-item-link"><i class="fas fa-home menu-home-icon"></i></a>
@@ -128,7 +143,6 @@
                         <input type="text" id="seach" class="search-input" placeholder="Nhập từ khóa tìm kiếm">
                     </li>
                 </ul>
-              </div>
             </div>
         </div>
         <div class="ad">
@@ -407,7 +421,7 @@
                                     <option >Hưng Yên</option>
                                     <option >Hải Dương</option>
                                     <option >Hải Phòng</option>
-                                    <option ></option>Hậu Giang</option>
+                                    <option >Hậu Giang</option>
                                     <option >Khánh Hòa</option>
                                     <option >Kiên Giang</option>
                                     <option >Kon Tum</option>
@@ -444,10 +458,13 @@
                                 </select>
                             </div>
                             <div class="weather-info">
-                                <div class="weather-img"><img width="27" src="https://static.mediacdn.vn/nld/Images/ThoiTiet/ThoiTiet2/it-may.png" alt="Nắng nhẹ"></div>
+                    
+                                <div class="weather-img">
+                                    <img width="27" src="https://static.mediacdn.vn/nld/Images/ThoiTiet/ThoiTiet2/it-may.png" alt="Nắng nhẹ">
+                                </div>
                                 <div>
                                     <p class="weather-temperature" >35<sup>o</sup>C</p>
-                                <p class="description" >Nắng nhẹ</p>
+                                    <p class="description" >Nắng nhẹ</p>
                                 </div>
                             </div>
                         </div>
@@ -492,6 +509,7 @@
                                         <a href="#"><h3 class="box-title">Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch</h3></a>
                                         <a class="news-content-title" href="#" title="Những đôi bàn tay nhăn nheo, trắng bệch vì ngâm mồ hôi trong bộ đồ bảo hộ chống dịch" >Những đôi bàn tay nhăn nheo, trắng bệch vì "ngâm mồ hôi" trong bộ đồ bảo hộ chống dịch</a>
                                         <a class="news-content-title" href="#" title="Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch" >Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch</a>
+                                        <p class="title-time">24/06/2021 13:02</p>
                                     </div>
                                 </a>
                             </div>
@@ -502,6 +520,7 @@
                                         <a href="#"><h3 class="box-title">Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch</h3></a>
                                         <a class="news-content-title" href="#" title="Những đôi bàn tay nhăn nheo, trắng bệch vì ngâm mồ hôi trong bộ đồ bảo hộ chống dịch" >Những đôi bàn tay nhăn nheo, trắng bệch vì "ngâm mồ hôi" trong bộ đồ bảo hộ chống dịch</a>
                                         <a class="news-content-title" href="#" title="Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch" >Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch</a>
+                                        <p class="title-time">24/06/2021 13:02</p>
                                     </div>
                                 </a>
                             </div>
@@ -512,6 +531,7 @@
                                         <a href="#"><h3 class="box-title">Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch</h3></a>
                                         <a class="news-content-title" href="#" title="Những đôi bàn tay nhăn nheo, trắng bệch vì ngâm mồ hôi trong bộ đồ bảo hộ chống dịch" >Những đôi bàn tay nhăn nheo, trắng bệch vì "ngâm mồ hôi" trong bộ đồ bảo hộ chống dịch</a>
                                         <a class="news-content-title" href="#" title="Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch" >Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch</a>
+                                        <p class="title-time">24/06/2021 13:02</p>
                                     </div>
                                 </a>
                             </div>
@@ -522,6 +542,7 @@
                                         <a href="#"><h3 class="box-title">Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch</h3></a>
                                         <a class="news-content-title" href="#" title="Những đôi bàn tay nhăn nheo, trắng bệch vì ngâm mồ hôi trong bộ đồ bảo hộ chống dịch" >Những đôi bàn tay nhăn nheo, trắng bệch vì "ngâm mồ hôi" trong bộ đồ bảo hộ chống dịch</a>
                                         <a class="news-content-title" href="#" title="Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch" >Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch</a>
+                                        <p class="title-time">24/06/2021 13:02</p>
                                     </div>
                                 </a>
                             </div>
@@ -532,6 +553,7 @@
                                         <a href="#"><h3 class="box-title">Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch</h3></a>
                                         <a class="news-content-title" href="#" title="Những đôi bàn tay nhăn nheo, trắng bệch vì ngâm mồ hôi trong bộ đồ bảo hộ chống dịch" >Những đôi bàn tay nhăn nheo, trắng bệch vì "ngâm mồ hôi" trong bộ đồ bảo hộ chống dịch</a>
                                         <a class="news-content-title" href="#" title="Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch" >Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch</a>
+                                        <p class="title-time">24/06/2021 13:02</p>
                                     </div>
                                 </a>
                             </div>
@@ -542,6 +564,35 @@
                                         <a href="#"><h3 class="box-title">Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch</h3></a>
                                         <a class="news-content-title" href="#" title="Những đôi bàn tay nhăn nheo, trắng bệch vì ngâm mồ hôi trong bộ đồ bảo hộ chống dịch" >Những đôi bàn tay nhăn nheo, trắng bệch vì "ngâm mồ hôi" trong bộ đồ bảo hộ chống dịch</a>
                                         <a class="news-content-title" href="#" title="Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch" >Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch</a>
+                                        <p class="title-time">24/06/2021 13:02</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box-news-list-img">
+                                <div class="box-news-list-img-title">
+                                    CLIP: Hàng loạt biệt thự bỏ hoang, khu đô thị ở Hà Nội thành nơi chăn thả bò
+                                </div>
+                                <div class="time">24/06/2021 13:02</div>
+                            </div>
+                            <div class="box-news-list">
+                                <a class="box-news-link" href="#" title="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
+                                    <img class="box-news-img" src="https://nld.mediacdn.vn/zoom/220_139/291774122806476800/2021/6/6/ngay-5-1622908001037-1622944886961553302705.jpeg" alt="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
+                                    <div class="box-news-content">
+                                        <a href="#"><h3 class="box-title">Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch</h3></a>
+                                        <a class="news-content-title" href="#" title="Những đôi bàn tay nhăn nheo, trắng bệch vì ngâm mồ hôi trong bộ đồ bảo hộ chống dịch" >Những đôi bàn tay nhăn nheo, trắng bệch vì "ngâm mồ hôi" trong bộ đồ bảo hộ chống dịch</a>
+                                        <a class="news-content-title" href="#" title="Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch" >Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch</a>
+                                        <p class="title-time">24/06/2021 13:02</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box-news-list">
+                                <a class="box-news-link" href="#" title="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
+                                    <img class="box-news-img" src="https://nld.mediacdn.vn/zoom/220_139/291774122806476800/2021/6/3/base64-16227126094441755637776.png" alt="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
+                                    <div class="box-news-content">
+                                        <a href="#"><h3 class="box-title">Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch</h3></a>
+                                        <a class="news-content-title" href="#" title="Những đôi bàn tay nhăn nheo, trắng bệch vì ngâm mồ hôi trong bộ đồ bảo hộ chống dịch" >Những đôi bàn tay nhăn nheo, trắng bệch vì "ngâm mồ hôi" trong bộ đồ bảo hộ chống dịch</a>
+                                        <a class="news-content-title" href="#" title="Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch" >Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch</a>
+                                        <p class="title-time">24/06/2021 13:02</p>
                                     </div>
                                 </a>
                             </div>
@@ -621,7 +672,7 @@
                             <div class="box box-content">
                                 <div class="header-cate">
                                     <div class="header-cate-content">
-                                        <a href="#" title="Tin độc quyền" class="title">Tin độc quyền</a>
+                                        <a href="#" class="title">Tin độc quyền</a>
                                     </div>
                                     <a href="#" title="Xem tất cả" class="view-more">Xem tất cả</a>
                                 </div>
@@ -652,21 +703,168 @@
                         </div>
                         
                     </div>
+                    
+
+                    <!-- Responsive mobile -->
+                    <div class="info info-mobile">
+                        <div class="weather-mobile" >
+                            <div class="weather ">
+                                <div class="weather-title">
+                                    <select class="city" >
+                                        <option >An Giang</option>
+                                        <option >Bình Dương</option>
+                                        <option >Bình Phước</option>
+                                        <option >Bình Thuận</option>
+                                        <option >Bình Định</option>
+                                        <option >Bạc Liêu</option>
+                                        <option >Bắc Giang</option>
+                                        <option >Bắc Kạn</option>
+                                        <option >Bắc Ninh</option>
+                                        <option >Bến Tre</option>
+                                        <option >Cao Bằng</option>
+                                        <option >Cà Mau</option>
+                                        <option >Cần Thơ</option>
+                                        <option >Điện Biên</option>
+                                        <option >Đà Nẵng</option>
+                                        <option >Đà lạt</option>
+                                        <option >Đắk Lắk</option>
+                                        <option >Đắk Nông</option>
+                                        <option >Đồng Nai</option>
+                                        <option >Đồng Tháp</option>
+                                        <option >Gia Lai</option>
+                                        <option >Tp Hà Nội</option>
+                                        <option  selected="">Tp Hồ Chí Minh</option>
+                                        <option >Hà Giang</option>
+                                        <option >Hà Nam</option>
+                                        <option >Hà Tây</option>
+                                        <option >Hà Tĩnh</option>
+                                        <option >Hòa Bình</option>
+                                        <option >Hưng Yên</option>
+                                        <option >Hải Dương</option>
+                                        <option >Hải Phòng</option>
+                                        <option >Hậu Giang</option>
+                                        <option >Khánh Hòa</option>
+                                        <option >Kiên Giang</option>
+                                        <option >Kon Tum</option>
+                                        <option >Lai Châu</option>
+                                        <option >Long An</option>
+                                        <option >Lào Cai</option>
+                                        <option >Lâm Đồng</option>
+                                        <option >Lạng Sơn</option>
+                                        <option >Nam Định</option>
+                                        <option >Nghệ An</option>
+                                        <option >Ninh Bình</option>
+                                        <option >Ninh Thuận</option>
+                                        <option >Phú Thọ</option>
+                                        <option >Phú Yên</option>
+                                        <option >Quảng Bình</option>
+                                        <option >Quảng Nam</option>
+                                        <option >Quảng Ngãi</option>
+                                        <option >Quảng Ninh</option>
+                                        <option >Quảng Trị</option>
+                                        <option >Sóc Trăng</option>
+                                        <option >Sơn La</option>
+                                        <option >Thanh Hóa</option>
+                                        <option >Thái Bình</option>
+                                        <option >Thái Nguyên</option>
+                                        <option >Thừa Thiên Huế</option>
+                                        <option >Tiền Giang</option>
+                                        <option >Trà Vinh</option>
+                                        <option >Tuyên Quang</option>
+                                        <option >Tây Ninh</option>
+                                        <option >Vĩnh Long</option>
+                                        <option >Vĩnh Phúc</option>
+                                        <option >Vũng Tàu</option>
+                                        <option >Yên Bái</option>
+                                    </select>
+                                </div>
+                                <div class="weather-info">
+                                    <div>
+                                        <p class="weather-temperature" >35<sup>o</sup>C</p>
+                                    <p class="description" >Nắng nhẹ</p>
+                                    </div>
+                                    <div class="weather-img"><img width="27" src="https://static.mediacdn.vn/nld/Images/ThoiTiet/ThoiTiet2/it-may.png" alt="Nắng nhẹ"></div>
+                                    
+                                </div>
+                            </div>
+                            <div class="exchange-rate ">
+                                <div class="rating-usd">
+                                    <div class="rating-usd-title">
+                                        Tỷ giá usd :
+                                    </div>
+                                    <div class="price" id="dola">23,120 VNĐ</div>
+                                </div>
+                                <div class="rating-usd">
+                                    <div class="rating-usd-title">
+                                        Giá vàng JSC :
+                                    </div>
+                                    <div class="price" id="gold">56,970/lượng</div>
+                                </div>
+                            </div>
+                       </div>
+                       <div class="info-market">
+                            <div class="info-stock  ">
+                                <a href="http://liveboard.cafef.vn/" title="Thị trường chứng khoán" >
+                                    <span class="stock-icon"></span>
+                                </a>
+                                <p class="stock-description">Thị trường chứng khoán</p>
+                            </div>
+                            <div class="kqxs ">
+                                <p class="kqxs-description">Kết quả xổ số</p>
+                                <a href="#" title="Kết quả xổ số">
+                                    <img class="kqxs-img" src="https://static.mediacdn.vn/nld/Images/icon_list.png" />
+                                </a>
+                                
+                            </div>
+                            <div class="vietlott">
+                                <a href="https://vesoonline.vn" class="vietlott-link"  title="vietlott">
+                                    <p class="vietlott-description">Chọn vé số</p>
+                                </a>
+                            </div>
+                       </div>
+                    </div>
+
+                    <div class=" news-vietlott news-vietlott-mobile">       
+                        <div class="news-vietlott-header">
+                            <p>Kết quả xổ số tự chọn</p>
+                            <img alt="xổ số vietlott" src="https://static.mediacdn.vn/nld/web_images/logovietlott-nbg.png">
+                        </div>
+                        <div class="boxvietlottsection">
+                            <div class="product">
+                                <div class="name">Mega 6/45</div>
+                                <div class="product-date">23/06/2021</div>
+                                <div class="lstNumb">
+                                    <ul class="lstNumb-list">
+                                        <li class="lstNumb-item">04</li><li class="lstNumb-item">07</li><li class="lstNumb-item">20</li><li class="lstNumb-item">28</li><li class="lstNumb-item">33</li><li class="lstNumb-item">41</li>
+                                    </ul>
+                                </div>
+                            </div>
+                                <div class="product">
+                                    <div class="name">Power 6/55</div>
+                                    <div class="product-date">22/06/2021</div>
+                                    <div class="lstNumb">
+                                        <ul class="lstNumb-list">
+                                            <li class="lstNumb-item">03</li><li class="lstNumb-item">09</li><li class="lstNumb-item">32</li><li class="lstNumb-item">33</li><li class="lstNumb-item">41</li><li class="lstNumb-item">43&nbsp;|&nbsp;40</li></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        <a rel="nofollow" class="vietlott-link" href="https://vietlott.vn/">Xem kết quả Max 3D, Max 4D tại đây</a>
+                    </div>
 
                     <!-- box-media -->
                     <div class="box-media">
                         <div class="media-content">
                             <h2 class="media-content-title">Multimedia</h2>
-                            <div style="width: 697px;">
+                            <div class="media-content-left" style="width: 697px;">
                                 <div class="media-news-content">
                                     <div class="media-main">
                                         <a href="#" title="CLIP: Cận cảnh Bệnh viện Bắc Thăng Long ngừng tiếp nhận bệnh nhân do ca bệnh Covid-19">
-                                            <img class="media-main-img" src="https://nld.mediacdn.vn/zoom/346_217/291774122806476800/2021/6/7/6j1a5286-162304987434832965695.jpg" alt="CLIP: Cận cảnh Bệnh viện Bắc Thăng Long ngừng tiếp nhận bệnh nhân do ca bệnh Covid-19"> 
+                                            <img class="media-main-img" src="https://nld.mediacdn.vn/zoom/480_300/291774122806476800/2021/6/24/img6627-16244982501891573746129.jpg" alt="CLIP: Cận cảnh Bệnh viện Bắc Thăng Long ngừng tiếp nhận bệnh nhân do ca bệnh Covid-19"> 
                                         </a>
                                         <div class="media-health">
                                             <a href="/suc-khoe.htm" title="Sức khỏe" class="category">Sức khỏe</a>
                                         </div>
-                                        <h3><a  class="" href="/#" title="CLIP: Cận cảnh Bệnh viện Bắc Thăng Long ngừng tiếp nhận bệnh nhân do ca bệnh Covid-19">CLIP: Cận cảnh Bệnh viện Bắc Thăng Long ngừng tiếp nhận bệnh nhân do ca bệnh Covid-19</a></h3>
+                                        <h3><a  class="" href="/#" title="CLIP: Cận cảnh Bệnh viện Bắc Thăng Long ngừng tiếp nhận bệnh nhân do ca bệnh Covid-19">CLIP: Hàng loạt biệt thự bỏ hoang, khu đô thị ở Hà Nội thành nơi chăn thả bò</a></h3>
                                     </div>
                                     <div class="media-new-list">
                                         <div class="news-row">
@@ -687,6 +885,17 @@
                                                 </a>
                                                 <div class="media-local-news">
                                                     <a href="/thoi-su.htm" title="Thời sự trong nước" class="category">Truyền hình</a>
+                                                </div>
+                                                <div style="margin-top: 13px;">
+                                                    <a href="#" class="media-item-content">Người Đà Nẵng trong ngày hàng quán, bãi tắm được mở cửa trở lại</a>
+                                                </div>
+                                            </div>
+                                            <div class="media-list-item  media-list-item-mb" style="margin-right: 0;">
+                                                <a class="media-item-link" href="#" >
+                                                    <img class="media-item-img" src="https://nld.mediacdn.vn/zoom/161_102/291774122806476800/2021/6/9/base64-1623218169103936615003.png" alt="CLIP: Hành trình truy bắt kẻ trộm, cướp ma mãnh ở miền Tây" > 
+                                                </a>
+                                                <div class="media-local-news">
+                                                    <a href="/thoi-su.htm" title="Thời sự trong nước" class="category">Thời sự trong nước</a>
                                                 </div>
                                                 <div style="margin-top: 13px;">
                                                     <a href="#" class="media-item-content">Người Đà Nẵng trong ngày hàng quán, bãi tắm được mở cửa trở lại</a>
@@ -745,9 +954,9 @@
 
                     <!-- see more -->
                     <div class="box-seemore">
-                        <div class="column-left-left">
+                        <div class="column-left-left column-left-left-semore-mb ">
                             <span class="box-seemore-title">Xem nhiều</span>
-                            <div class="box-news-left">
+                            <div class="box-news-left box-news-left-seemore-mb">
                                 <div class="box-news-list">
                                     <a class="box-news-link" href="#" title="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
                                         <img class="box-news-img" src="https://nld.mediacdn.vn/zoom/220_139/291774122806476800/2021/6/6/toc-16229482619311492879445.jpeg" alt="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
@@ -755,6 +964,7 @@
                                             <a href="#"><h3 class="box-title">Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch</h3></a>
                                             <a class="news-content-title" href="#" title="Những đôi bàn tay nhăn nheo, trắng bệch vì ngâm mồ hôi trong bộ đồ bảo hộ chống dịch" >Những đôi bàn tay nhăn nheo, trắng bệch vì "ngâm mồ hôi" trong bộ đồ bảo hộ chống dịch</a>
                                             <a class="news-content-title" href="#" title="Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch" >Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch</a>
+                                            <p class="title-time">24/06/2021 13:02</p>
                                         </div>
                                     </a>
                                 </div>
@@ -765,6 +975,7 @@
                                             <a href="#"><h3 class="box-title">Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch</h3></a>
                                             <a class="news-content-title" href="#" title="Những đôi bàn tay nhăn nheo, trắng bệch vì ngâm mồ hôi trong bộ đồ bảo hộ chống dịch" >Những đôi bàn tay nhăn nheo, trắng bệch vì "ngâm mồ hôi" trong bộ đồ bảo hộ chống dịch</a>
                                             <a class="news-content-title" href="#" title="Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch" >Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch</a>
+                                            <p class="title-time">24/06/2021 13:02</p>
                                         </div>
                                     </a>
                                 </div>
@@ -775,6 +986,7 @@
                                             <a href="#"><h3 class="box-title">Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch</h3></a>
                                             <a class="news-content-title" href="#" title="Những đôi bàn tay nhăn nheo, trắng bệch vì ngâm mồ hôi trong bộ đồ bảo hộ chống dịch" >Những đôi bàn tay nhăn nheo, trắng bệch vì "ngâm mồ hôi" trong bộ đồ bảo hộ chống dịch</a>
                                             <a class="news-content-title" href="#" title="Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch" >Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch</a>
+                                            <p class="title-time">24/06/2021 13:02</p>
                                         </div>
                                     </a>
                                 </div>
@@ -785,6 +997,7 @@
                                             <a href="#"><h3 class="box-title">Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch</h3></a>
                                             <a class="news-content-title" href="#" title="Những đôi bàn tay nhăn nheo, trắng bệch vì ngâm mồ hôi trong bộ đồ bảo hộ chống dịch" >Những đôi bàn tay nhăn nheo, trắng bệch vì "ngâm mồ hôi" trong bộ đồ bảo hộ chống dịch</a>
                                             <a class="news-content-title" href="#" title="Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch" >Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch</a>
+                                            <p class="title-time">24/06/2021 13:02</p>
                                         </div>
                                     </a>
                                 </div>
@@ -795,42 +1008,50 @@
                                             <a href="#"><h3 class="box-title">Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch</h3></a>
                                             <a class="news-content-title" href="#" title="Những đôi bàn tay nhăn nheo, trắng bệch vì ngâm mồ hôi trong bộ đồ bảo hộ chống dịch" >Những đôi bàn tay nhăn nheo, trắng bệch vì "ngâm mồ hôi" trong bộ đồ bảo hộ chống dịch</a>
                                             <a class="news-content-title" href="#" title="Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch" >Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch</a>
+                                            <p class="title-time">24/06/2021 13:02</p>
                                         </div>
                                     </a>
                                 </div>
-                                <div class="box-news-list" style="border: none;">
+                                <div class="box-news-list" >
                                     <a class="box-news-link" href="#" title="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
                                         <img class="box-news-img" src="https://nld.mediacdn.vn/zoom/220_139/291774122806476800/2021/6/5/thuthuy1-16229079082291919544537.jpeg" alt="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
                                         <div class="box-news-content">
                                             <a href="#"><h3 class="box-title">Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch</h3></a>
                                             <a class="news-content-title" href="#" title="Những đôi bàn tay nhăn nheo, trắng bệch vì ngâm mồ hôi trong bộ đồ bảo hộ chống dịch" >Những đôi bàn tay nhăn nheo, trắng bệch vì "ngâm mồ hôi" trong bộ đồ bảo hộ chống dịch</a>
                                             <a class="news-content-title" href="#" title="Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch" >Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch</a>
+                                            <p class="title-time">24/06/2021 13:02</p>
                                         </div>
                                     </a>
                                 </div>
-                                <div class="box-news-list" style="border: none;">
+                                <div class="box-news-list" >
                                     <a class="box-news-link" href="#" title="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
                                         <img class="box-news-img" src="https://nld.mediacdn.vn/zoom/220_139/291774122806476800/2021/6/9/1921205775068252772314157998631069428988004n-16232142257371152929490.jpg" alt="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
                                         <div class="box-news-content">
                                             <a href="#"><h3 class="box-title">Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch</h3></a>
                                             <a class="news-content-title" href="#" title="Những đôi bàn tay nhăn nheo, trắng bệch vì ngâm mồ hôi trong bộ đồ bảo hộ chống dịch" >Những đôi bàn tay nhăn nheo, trắng bệch vì "ngâm mồ hôi" trong bộ đồ bảo hộ chống dịch</a>
                                             <a class="news-content-title" href="#" title="Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch" >Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch</a>
+                                            <p class="title-time">24/06/2021 13:02</p>
                                         </div>
                                     </a>
                                 </div>
-                                <div class="box-news-list" style="border: none;">
+                                <div class="box-news-list" >
                                     <a class="box-news-link" href="#" title="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
                                         <img class="box-news-img" src="https://nld.mediacdn.vn/zoom/220_139/291774122806476800/2021/6/8/base64-16231259716881369435847.png" alt="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
                                         <div class="box-news-content">
                                             <a href="#"><h3 class="box-title">Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch</h3></a>
                                             <a class="news-content-title" href="#" title="Những đôi bàn tay nhăn nheo, trắng bệch vì ngâm mồ hôi trong bộ đồ bảo hộ chống dịch" >Những đôi bàn tay nhăn nheo, trắng bệch vì "ngâm mồ hôi" trong bộ đồ bảo hộ chống dịch</a>
                                             <a class="news-content-title" href="#" title="Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch" >Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch</a>
+                                            <p class="title-time">24/06/2021 13:02</p>
                                         </div>
                                     </a>
                                 </div>
+                              
+
                             </div>
                         </div>
-                        <div class="column-left-right">
+
+
+                        <div class="column-left-right column-left-righ-semore-mb">
                             <div class="box-longform">
                                 <a href="#" title="[eMagazine] Bà Sáu Thia - người phụ nữ truyền cảm hứng" >
                                     <img class="box-longform-img" src="https://nld.mediacdn.vn/thumb_w/258/291774122806476800/2021/6/2/day-boi-cover-1622616040942419308034.jpg" alt="[eMagazine] Bà Sáu Thia - người phụ nữ truyền cảm hứng"> 
@@ -884,6 +1105,68 @@
 
 
                     </div>
+                     
+                    <!-- responsive mobile-->
+                    <a rel="nofollow" href="#" class="view_more ">
+                        Xem thêm<span class="fr aright_ico">&nbsp;</span>
+                    </a>
+
+                    <ul class="box-hot-zone">
+                        <li class="box-hot-zone-item">
+                            <a href="#" class="icon-doc-quyen"></a>
+                            <a href="#"  class="title-zone">
+                                SỐC: 2 cô gái khỏa thân trong quán karaoke ở TP Biên Hoà để phục vụ 20 khách
+                            </a>
+                        </li>
+                        <li class="box-hot-zone-item">
+                            <a href="#" class="icon-doc-quyen"></a>
+                            <a href="#"  class="title-zone">
+                                SỐC: 2 cô gái khỏa thân trong quán karaoke ở TP Biên Hoà để phục vụ 20 khách
+                            </a>
+                        </li><li class="box-hot-zone-item" style="margin-right: 0;">
+                            <a href="#"  class="icon-doc-quyen"></a>
+                            <a href="#"  class="title-zone">
+                                SỐC: 2 cô gái khỏa thân trong quán karaoke ở TP Biên Hoà để phục vụ 20 khách
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="box-photo box-photo-mb">
+                        <a href="#" class="box-photo-title">
+                            <p>SÁU CUỘC THI HẤP DẪN CHỜ BẠN</p>
+                        </a>
+                        <div class="photo-content">
+                            <div class="row-content">
+                                <a href="#">
+                                    <img src="https://static.mediacdn.vn/nld/web_images/hien-ke.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="https://static.mediacdn.vn/nld/web_images/viet-chu-quyen-bien-dao.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="row-content">
+                                <a href="#">
+                                    <img src="https://static.mediacdn.vn/nld/web_images/ky-uc.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="https://static.mediacdn.vn/nld/web_images/net-dep-lao-dong.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="row-content">
+                                <a href="#">
+                                    <img src="https://static.mediacdn.vn/nld/web_images/tenvang.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="https://static.mediacdn.vn/nld/web_images/chung-tay-vi-an-toan-giao-thong.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+
+
+                    
 
                     <!-- box Euro -->
                     <div class="box-euro">

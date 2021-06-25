@@ -255,6 +255,9 @@
     background-color: #0959ab;
     height: 30px;
 }
+.menu-mb{
+    display: none;
+}
 .menu-list{
     width: 1160px;
     margin: 0 94px;
@@ -507,9 +510,6 @@
     position: relative;
     top: -2px;
 }
-.tab-item2:focus ~ .scroll{
-    display: none;
-}
 .tab-item:first-child.active {
     border-top-color: #0959ab;
     color: #000;
@@ -564,15 +564,15 @@
     height: 404px;
     overflow-y: scroll;
 }
-::-webkit-scrollbar {
+.scroll::-webkit-scrollbar {
     width: 5px;
     height: 30px;
 }
-::-webkit-scrollbar-thumb {
+.scroll::-webkit-scrollbar-thumb {
     background:#ccc; 
     border-radius: 10px;
 }
-::-webkit-scrollbar {max-height: 50%; height: 20px;}  
+.scroll::-webkit-scrollbar {max-height: 50%; height: 20px;}  
 .item-news-thumb {
     padding: 8px 0;
     margin-left: 34px;
@@ -641,6 +641,9 @@
     display: flex;
     /* justify-content: space-between; */
     box-sizing: border-box;
+}
+.info-mobile{
+    display: none;
 }
 .weather{
     position: relative;
@@ -820,7 +823,8 @@ option{
     justify-content: space-between;
 }
 .box-news-left{
-    width: 100%
+    width: 100%;
+    margin-right: 14px;
 }
 .box-news-list{
     display: flex;
@@ -868,6 +872,9 @@ option{
     padding: 22.85px 20px;
     height: 148px;
     margin-bottom: 6px;
+}
+.news-vietlott-mobile{
+    display: none;
 }
 .news-vietlott-header{
     display: flex;
@@ -1167,6 +1174,7 @@ option{
     font-weight: 600;
     line-height: 1.1;
     text-transform: uppercase;
+    position: relative;
 }
 .media-news-content{
     margin-top: 15px;
@@ -1184,6 +1192,9 @@ option{
     width: 346px;
     height: 68px;
     background: linear-gradient(transparent,rgba(0,0,0,.8));
+}
+.media-main-img{
+    width: 100%;
 }
 .media-health a{
     font-size: 1.2rem;
@@ -1212,6 +1223,9 @@ option{
 .media-list-item{
     width: 161px;
     position: relative;
+}
+.media-list-item-mb{
+    display: none;
 }
 .media-local-news{
     position: absolute;
@@ -2144,4 +2158,26 @@ option{
     color: #000;
     line-height: 1.4;
     margin-top: 10px;
+}
+
+
+
+/* responsive */
+.box-news-list-img{
+    display: none;
+}
+.box-news-list:nth-child(9){
+    display: none;
+}
+.box-news-list:nth-child(8){
+    display: none;
+}
+.box-hot-zone{
+    display: none;
+}
+.view_more{
+    display: none;
+}
+.box-photo-mb{
+    display: none;
 }

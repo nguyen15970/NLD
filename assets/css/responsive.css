@@ -3,6 +3,9 @@
     .box-focus{
         display: none;
     }
+    .title-time{
+        display: none;
+    }
 
 }
 
@@ -11,6 +14,104 @@
 /* mobile */
 
 @media (max-width:739px){
+    h1{
+        margin: 0;
+    }
+    .header-menu{
+        height: 44px;
+    }
+    .menu-mb{
+        display: flex;
+
+    }
+    .menu-list{
+        display: none;
+    }
+    .menu-mb-icon {
+        padding: 16px;
+
+    }
+    .menu-mb-icon-item{
+        width: 16px;
+        height: 2px;
+        margin-top: 2px;
+        background: #fff;
+        border-radius: 2px;
+    }
+    .header .logo {
+        display: block;
+        width: 140px;
+        height: 23px;
+        background-image: url(https://static.mediacdn.vn/nld/web_images/logoMobNld.png);
+        background-size: contain;
+        float: left;
+        background-repeat: no-repeat;
+        margin-top: 11px;
+    }
+    .icon-item{
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        padding: 14px;
+    }
+    .icon-menu-fb{
+        font-size: 18px;
+        color: #fff;
+        margin-right: 20px;
+    }
+    .icon-menu-youtube{
+        font-size: 18px;
+        color: #fff;
+        margin-right: 20px;
+    }
+    .icon-menu-seach{
+        font-size: 18px;
+        color: #fff;
+        margin-right: 40px;
+    }
+    .seach-mb{
+        width: 40px;
+    }
+    .seach-link-mb{
+        top: 2px;
+        left: 11px;
+        position: relative;    
+        padding-top: 7px;
+        padding-bottom: 0;
+        padding-right: 0;
+        cursor: pointer;
+    }
+    .seach-link-mb::before{
+        content: '';
+        background-image: url(https://static.mediacdn.vn/nld/web_images/spritesV8.png);
+        display: block;
+        background-repeat: no-repeat;
+        background-position: -73px -90px;
+        width: 17px;
+        height: 17px;
+    }
+    #search-input-mb{
+        width: 0;
+        height: 25px;
+        border-radius: 20px;
+        font-size: 13px;
+        transition: all .3s;
+        border: 1px solid #fff;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;  
+        position: absolute;
+        left: 154px;
+        top: 10px;
+        visibility: visible;
+        opacity: 0;
+        background: transparent;
+        display: none;
+    }
+    .search-input{
+        left: -154px;
+        top: -6px;
+        border: 1px solid #fff;
+    }
     .top-header{
         display: none;
     }
@@ -20,6 +121,8 @@
     .container{
         max-width: 793px;
         margin: 0;
+        position: relative;
+        top: -22px;
     }
     .ad{
         display: none;
@@ -35,6 +138,8 @@
     }
     .content-left {
         width: 100%;
+        position: relative;
+        top: -100px
     }
     .top-new-image{
         width: 100%;
@@ -52,7 +157,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 437px;
+    margin-bottom: 470px;
     padding: 0 15px;
 
     }
@@ -75,5 +180,415 @@
     }
     .box-news-right{
         display: none;
+    }
+    .info{
+    }
+    .news-item{
+        width: 100%;
+    }
+    .news-title{
+        margin-right: 4px;
+    }
+    .news-title a{
+        font-size: 29px;
+    }
+    .box-news-list{
+        display: flex;
+        height: unset;
+    }
+    .box-news-list:nth-child(1){
+        display: none;
+    }
+    .box-news-list:nth-child(2){
+       display: none;
+    }
+    .box-news-list:nth-child(6){
+        border-bottom: 1px solid #eee  !important;
+    }
+    .box-news-left{
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .box-news-list{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    }
+    .box-news-img{
+        width: 100%;
+        border-radius: 5px;
+        height: 90px;
+    }
+    .box-news-link{
+        width: 97.5%;
+    }
+    .news-content-title{
+        display: none;
+    }
+    .title-time{
+        margin-top: 10px;
+        margin-left: 18px;
+        color: rgb(180, 175, 175);
+        font-size: 12px;
+    }
+    .box-title{
+        font-size: 15px;
+    }
+    .box-news-list-img{
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #eee;
+        display: block;
+        margin-left: 8px;
+    }
+    .box-news-list-img-title{
+        color: #222;
+        line-height: 21px;
+        margin-top: 10px;
+        position: relative;
+        margin-bottom: 12px;
+        display: block;
+        font-size: 16px;
+        padding-bottom: 20px;
+        margin-left: 10px;
+    }
+    .box-news-list-img::before{
+        content: '';
+        width: 18px;
+        height: 17px;
+        background: url(https://static.mediacdn.vn/nld/web_images/mob/Image-grey.svg) no-repeat;
+        display: inline-block;
+        margin-bottom: -1px;
+        position: absolute;
+        left: 12px;
+    }
+    .time{
+        font-size: 1.2rem;
+        color: rgb(170, 165, 165);
+
+    }
+    .box-news-list:nth-child(9){
+        display: flex;
+    }
+    .box-news-list:nth-child(8){
+        display: flex;
+    }
+    .info{
+        display: none;
+    }
+    .info-mobile{
+        display: block;
+        margin-bottom:70px ;
+        background-color: transparent;
+        border: none;
+        margin-top: 0;
+
+    }
+    .weather{
+        display: block;
+        width: unset;
+        padding: 10px;
+        
+    }
+    .weather-title{
+        width: unset;
+    }
+    .city{
+        font-size: 10px;
+        color: rgb(194, 189, 189);
+        margin-left: 10px;
+    }
+    .weather-temperature {
+        color: #000;
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .description {
+        color: rgb(194, 189, 189);
+        font-size: 10px;
+    }
+    .weather-mobile{
+        display: flex;
+        justify-content: space-between;
+        margin-top: -19px;
+        border-bottom: 1px solid #eee;
+
+    }
+    .rating-usd{
+        margin-top: 7px;
+    }
+    .rating-usd-title{
+        margin-right: 10px;
+        color: #222;
+        font-size: 1rem;
+        font-weight: bold;
+        line-height: 17px;
+        float: left;
+    }
+    .price{
+        color: #999;
+        font-size: 1rem;
+        line-height: 17px;
+        float: left;
+    }
+    .exchange-rate {
+        justify-content: flex-end;
+        display: block;
+        margin-left: 50px;
+    }
+    .stock-icon{
+        margin-top: 14px;
+    }
+    .info-market{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 4px;
+    }
+    .kqxs{
+        display: block;
+        padding: 10px 5px 17px 10px;
+        margin-left: 12px;
+    }
+    .kqxs-img{
+        margin-left: 31px;
+        margin-top: 3px;
+    
+    }
+    .boxvietlottsection{
+        margin-bottom: 10px;
+    }
+    .vietlott{
+        padding: 16px 5px 17px 10px;
+        
+    }
+    .stock-description{
+        text-transform: uppercase;
+    }
+    .news-vietlott{
+        display: block;
+        background: transparent;
+    }
+    .news-vietlott-header{
+        border-bottom: 5px solid #eee;
+        padding-bottom: 2px;
+    }
+    .vietloot-slider{
+        animation: none;
+    }
+    .product{
+        display: grid;
+        grid-template-columns: 85px 80px 1fr;
+    }
+    .product .name {
+        width: 85px;
+        padding-left: 5px;
+        font-size: 10pt !important;
+        font-weight: bold;
+        background-color: #f2f2f0;
+        color: #fb291f;
+        padding: 4px;
+        text-align: center;
+    }
+    .product-date {
+        width: 80px;
+        color: #333;
+        padding: 4px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .lstNumb {
+        margin-right: 1px;
+        font-weight: bold;
+        padding: 4px;
+        margin-top: 10px;
+    }
+    .lstNumb-list{
+        padding: 0;
+        margin: 0;
+    }
+    .lstNumb-item{
+        display: inline-block;
+        margin-right: 8px;
+    }
+    .column-left-left-semore-mb{
+        width: 100% !important;
+    }
+    .box-news-left-seemore-mb{
+        margin-right: 0 !important;
+        padding-right: 25px !important;
+
+    }
+    .column-left-righ-semore-mb{
+        display: none;
+    }
+    .box-seemore-title{
+        display: none ;
+    }
+    .view_more {
+        border-radius: 3px;
+        background-color: #e9e9e9;
+        font: normal 16px/12px arial;
+        color: #666 !important;
+        padding: 12px;
+        margin: 25px 10px;
+        display: block;
+    }
+    .view_more span{
+        background-image: url(https://static.mediacdn.vn/nld/web_images/mob/right.png);
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background-size: 12px;    
+    margin-left: 244px;
+
+    }
+    .box-hot-zone{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+    .box-hot-zone-item{
+        background: #bd333e;
+        border-radius: 5px;
+        margin-top: 20px;
+        margin-right: 15px;
+        width: calc((100vw - 60px)/3);
+        height: 146px;
+        padding: 40px 10px 0 10px;
+    }
+    .icon-doc-quyen{
+        position: relative;
+        padding: 0;
+        color: #fff;
+        font-size: 1.1rem;
+        font-weight: bold;
+        display: block;
+    }
+    .icon-doc-quyen::before{
+        content: '';
+        width: 85px;
+        height: 56px;
+        position: absolute;
+        display: block;
+        top: -69px;
+        z-index: 10;
+        left: 0;    
+        background-image: url(https://static.mediacdn.vn/nld/web_images/mob/TinDocQuyen.svg)
+    }
+    .title-zone{
+        font-size:11px;
+        color: #fff;
+        font-weight: bold;
+
+    }
+    .box-media{
+        position: absolute;
+        top: 3205px;
+        border: none;
+        background: transparent;
+        display: block;
+    }
+    .media-content{
+        padding: 0;
+        position: absolute;
+        top: -170px;
+    }
+    .navigation{
+        display: none;
+    }
+    .box-euro{
+        margin-top: 1000px;
+    }
+    .media-news-content{
+        display: block;
+    }
+    .media-content-left{
+        width: 100% !important;
+    }
+    .media-content-title{
+        margin-left: 35px;
+    }
+    .media-content-title::before{
+        content: '';
+        width: 20px;
+        height: 20px;
+        float: left;
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: -25px;
+        background-image: url(https://static.mediacdn.vn/nld/web_images/mob/VideoHeaderHome.svg);
+    }
+    .media-main{
+        width: 100%;
+        position: relative;
+        background: #000;
+    }
+    .media-main a> img{
+        width: 100%;
+    }
+    .media-health{
+        width: 100% !important;
+        top : 167px !important;
+        background-image: linear-gradient(transparent,black) !important;
+    }
+    .media-main h3{
+        position: absolute;
+        bottom: 0;
+        padding: 0 16px;
+        padding-bottom: 20px;
+    }
+    .media-main h3 >a{
+        color: #fff;
+        font-size: 1.7rem;
+    }
+    .media-health a{
+        display: none;
+    }
+    .media-new-list{
+        padding: 15px 15px 30px;
+        background: #222;
+    }
+    .media-item-content{
+        color: #fff;
+    }
+    .media-list-item{
+        width: calc((100vw - 60px)/3);
+        margin-right: 13px;
+    }
+    .media-item-img{
+        width: 100%;
+    }
+    .media-local-news{
+        display: none;
+    }
+    .news-row:last-child{
+        display: none;
+    }
+    .media-list-item-mb{
+        display: block;
+    }
+    .media-item-content{
+        font-weight: 400;
+    }
+    .box-photo-mb{
+        display: block;
+        margin-top: 540px   ;
+        border: none;
+        padding: 12px 24px;
+    }
+    .box-photo-title p{
+        background: transparent;
+        margin-left: 19px;
+        animation: photo 1s infinite;
+        padding-top: 20px;
+        border-top: 3px solid #eee;
+        border-radius: 0px;
+    }
+    .row-content{
+        justify-content: space-between;
     }
 }

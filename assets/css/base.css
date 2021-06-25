@@ -335,3 +335,58 @@ h2{
         left: -400%;
     }
 }
+@-webkit-keyframes photo {
+    0% {
+        color: #FBEC0B;
+    }
+
+    50% {
+        color: #247bc8;
+    }
+
+    100% {
+        color: #F8CD0A;
+    }
+}
+
+@-moz-keyframes photo {
+    0% {
+        color: #FBEC0B;
+    }
+
+    50% {
+        color: #247bc8;
+    }
+
+    100% {
+        color: #F8CD0A;
+    }
+}
+
+@-o-keyframes photo {
+    0% {
+        color: #FBEC0B;
+    }
+
+    50% {
+        color: #fff;
+    }
+
+    100% {
+        color: #F8CD0A;
+    }
+}
+
+@keyframes photo {
+    0% {
+        color: #FBEC0B;
+    }
+
+    50% {
+        color: #247bc8;
+    }
+
+    100% {
+        color: #F8CD0A;
+    }
+}

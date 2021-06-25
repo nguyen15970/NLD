@@ -31,7 +31,20 @@ function topFunction() {
 // seach
 function seachFunction(){
   var x =document.getElementById("seach")
-  var a= document.querySelector('input').getAttribute("class")
+  var a= document.getElementById('seach').getAttribute("class")
+  var y= a.lastIndexOf("active")
+
+  if(!(y===-1)){
+    x.classList.remove('active')
+  }
+  else{
+    x.classList.add('active')
+  }
+}
+// seach mobile
+function seachFunctionMobile(){
+  var x =document.getElementById("search-input-mb")
+  var a= document.getElementById('search-input-mb').getAttribute("class")
   var y= a.lastIndexOf("active")
 
   if(!(y===-1)){
@@ -81,7 +94,6 @@ function tabContentHot(){
 }
 
 
-// slider index.html
 
 
 
@@ -199,9 +211,18 @@ btnPrev.onclick = ()=>{
 
 // audio
 var audio= document.getElementsByClassName("detail-share-micro-img");
-
+var audioStar=document.getElementById("audio-link");
 function Startaudio(){
     document.querySelector(".detail-share-micro").setAttribute('style','display:none;')
     document.querySelector(".detail-icon").setAttribute('style','justify-content: flex-end;')
     document.querySelector(".audio").setAttribute('style','display:block !important')
+    audioStar.play();
+
 }
+function stopAudio(){
+  audioStar.pause();
+}
+
+
+
+
