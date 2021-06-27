@@ -248,13 +248,13 @@ h2{
 }
 .box-box-case-list{
     flex: none;
-   width: auto;
+     width: auto
 }
 .box-box-case-item{
     margin-right: 30px;
 }
 .sticky {
-    position: fixed;
+       position: fixed;
        top: 0;
        width: 100%;
        z-index: 9999;

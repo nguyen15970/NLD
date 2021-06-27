@@ -1,3 +1,6 @@
+.app{
+    overflow: hidden;
+}
 .header{
     height: 144px;
     width: 100%;
@@ -1434,7 +1437,6 @@ option{
     margin-top: 30px;
     background-color: #0090a8;
     padding: 28px 20px 20px 18px;
-    height: 400px;
     color: #fff;
 }
 .box-euro-title{
@@ -1453,6 +1455,9 @@ option{
 .euro-list{
     display: flex;
     justify-content: space-between;
+}
+.list-cate{
+    display: none;
 }
 .euro-item{
     font: normal 12px/normal Roboto-Bold;
@@ -1493,7 +1498,7 @@ option{
 
 }
 .euro-content-right{
-    width: 37.124%;
+    width: 33.124%;
 }
 .euro-content-right img{
     width: auto;
@@ -1509,7 +1514,7 @@ option{
     height: 94px;
     display: flex;
 }
-.euro-content-right-item:last-child{
+.euro-content-right-item:nth-child(3){
     border-bottom: none;
     margin-top: 10px;
 
@@ -1517,6 +1522,12 @@ option{
 .euro-content-right-item:nth-child(2){
     margin-top: 10px;
     
+}
+.euro-content-right-item:nth-child(4){
+    display: none;   
+}
+.euro-content-right-item:nth-child(5){
+    display: none;
 }
 .euro-content-right-item p:nth-child(2){
     margin-right: 10px;
@@ -2180,4 +2191,14 @@ option{
 }
 .box-photo-mb{
     display: none;
+}
+.box-menu-mb{
+    display: none;
+}
+.box-case-center-item-mb-none{
+    display: none;
+}
+.box-case-center-item-mb-fl a >img{
+    width: 87%;
+    height: 72px;
 }

@@ -4,6 +4,7 @@ window.onscroll = function() {myFunction()};
 var header = document.getElementById("myHeader");
 var sticky = header.offsetTop;
 var mybutton = document.getElementById("myBtn");
+var footerMB= document.querySelector(".footer-menu-mb")
 
 
 function myFunction() {
@@ -12,7 +13,17 @@ function myFunction() {
     header.classList.add("sticky");
   } else {
     header.classList.remove("sticky");
+
   }
+  if (document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500) {
+    footerMB.classList.add("footer-menu-mb-active")
+
+  } 
+  else {
+    footerMB.classList.remove("footer-menu-mb-active")
+    
+  }
+
   //button back to top
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
     mybutton.style.display = "block";
@@ -223,6 +234,26 @@ function stopAudio(){
   audioStar.pause();
 }
 
+//Responsive menu
 
+
+
+function OpenMenuCategory(){
+    var x =document.querySelector(".menu-mb-icon")
+    var y =  document.querySelector(".box-menu-mb")
+    var z = document.querySelector(".main-menu-cancel")
+    y.classList.add("box-menu-mb-active")
+    x.setAttribute('style','display:none;')
+    z.setAttribute('style','display:block;')
+}
+function CloseMenuCategory(){
+    var x =document.querySelector(".menu-mb-icon")
+    var y =  document.querySelector(".box-menu-mb")
+    var z = document.querySelector(".main-menu-cancel")
+    y.classList.remove("box-menu-mb-active")
+    x.setAttribute('style','display:block;')
+    z.setAttribute('style','display:none;')
+}
+      // cate menu
 
 
