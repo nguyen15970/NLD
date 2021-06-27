@@ -1,0 +1,102 @@
+@media (min-width:1024px){
+    .box-case{
+        display: none;
+    }
+    .box-case-center-item-vertical-time{
+        display: none;
+    }
+    .app-news-container-left-mb{
+        display: none;
+    }
+}
+@media (max-width:739px){
+    .app-content-left-title{
+        display: none;
+    }
+    .app-content-right{
+        display: none;
+    }
+    .app-content-left-box-case{
+        display: none;
+    }
+    .app-content{
+        margin: 0;
+    }
+    .app-content-left{
+        width: 100%;
+    }
+    .header{
+        height: 44px;
+    }
+    .box-case-content{
+        background-color: #f0f0f0;
+        border-bottom: 1px solid #eee;
+        
+    }
+    .box-case-left p{
+        display: block !important;
+        padding: 0 20px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .box-case-left h3 >a{
+        font-family: sans-serif;
+    }
+    .box-case-center{
+        background: #fff;
+        padding-top: 30px;
+    }
+    .border{
+        display: none;
+    }   
+    .app-news-container{
+        display: block !important;
+    }
+    .app-news-container-left{
+        width: 100% !important;
+    }
+    .box-news-list{
+        margin: 0 20px;
+
+    }
+    .app-news-container-right{
+        display: none;
+    }
+    .box-news-img{
+        width: 120px !important;
+        height: 90px;
+        border-radius: 7px;
+    }
+    .box-news-link{
+        width: unset !important;
+    }
+    .box-news-list:nth-child(1){
+        display: flex !important;
+    }
+    .box-news-list:nth-child(2){
+        display: flex !important;
+    }
+    .box-news-list-img{
+        margin-right: 8px;
+    }
+    .box-case-center-item-vertical-time{
+        margin-left: 15px !important;
+    }
+    .btn-seemore{
+        display: none;
+    }
+    .box-case-center-item a>p{
+        font-weight: normal !important;
+    }
+    .box-case-center-mb{
+        border-left: none !important;
+        border-right: none !important;
+    }
+    .footer-content{
+        padding-bottom: 0;
+    }
+    .header .logo{
+        position: relative;
+        top: 1px;
+    }
+}

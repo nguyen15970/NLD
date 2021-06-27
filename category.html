@@ -11,10 +11,109 @@
     <link rel="stylesheet" href="./assets/fontf/fontawesome-free-5.15.1-web/fontawesome-free-5.15.1-web/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/responsiveCategory.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <title>Trong nước</title>
 </head>
 <body>
     <div class="app">
+        <ul class="box-menu-mb ">
+            <li>
+                <a href="/thoi-su.htm" title="Thời sự">Trong nước</a>
+                
+            </li>
+            <li>
+                <a href="/thoi-su-quoc-te.htm" title="Thời sự quốc tế">Quốc tế</a>
+                
+            </li>
+            <li>
+                <a href="/cong-doan.htm" title="Công đoàn">Công đoàn</a>
+                
+            </li>
+            <li>
+                <a href="/ban-doc.htm" title="Bạn đọc">Bạn đọc</a>
+                
+            </li>
+            <li>
+                <a href="/kinh-te.htm" title="Kinh tế">Kinh tế</a>
+                
+            </li>
+            <li>
+                <a href="/suc-khoe.htm" title="Sức khỏe">Sức khỏe</a>
+                
+            </li>
+            <li>
+                <a href="/giao-duc-khoa-hoc.htm" title="Giáo dục">Giáo dục</a>
+                
+            </li>
+            <li>
+                <a href="/phap-luat.htm" title="Pháp luật">Pháp luật</a>
+                
+            </li>
+            <li>
+                <a href="/giai-tri.htm" title="Giải trí">Giải trí</a>
+                
+            </li>
+            <li>
+                <a href="/the-thao.htm" title="Thể thao">Thể thao</a>
+                
+            </li>
+            <li>
+                <a href="/cong-nghe.htm" title="Công nghệ">Công nghệ</a>
+                
+            </li>
+            <li>
+                <a href="/moi-truong.htm" title="Môi trường">Môi trường</a>
+                
+            </li>
+            <li>
+                <a href="https://diaoc.nld.com.vn/" title="Địa ốc" target="_blank" rel="nofollow">Địa ốc</a>
+                
+            </li>
+            <li>
+                <a href="/van-nghe.htm" title="Văn nghệ">Văn nghệ</a>
+                
+            </li>
+            <li>
+                <a href="/diem-den-hap-dan.htm" title="Điểm đến">Điểm đến</a>
+                
+            </li>
+            <li>
+                <a href="https://phunu.nld.com.vn/" title="Phụ nữ" target="_blank" rel="nofollow">Phụ nữ</a>
+                
+            </li>
+            <li>
+                <a href="/dia-phuong.htm" title="Địa phương">Địa phương</a>
+                
+            </li>
+            
+
+            <li>
+                <a href="/khoa-hoc.htm" title="Khoa học">Khoa học</a>
+                
+            </li>
+
+            <li>
+                <a href="https://thitruong.nld.com.vn/" title="Thị trường" target="_blank" rel="nofollow">Thị trường</a>
+                
+            </li>
+            <li>
+                <a href="/ly-tuong-song.htm" title="Lý tưởng sống">Lý tưởng sống</a>
+            </li>
+            <li>
+                <a href="/bien-dao.htm" title="Biển đảo">Biển đảo</a>
+            </li>
+            <li>
+                <a href="/noi-thang.htm" title="Nói thẳng">Nói thẳng</a>
+            </li>
+            <li>
+                <a href="/trich-dan-nong.htm" title="Trích dẫn nóng">Trích dẫn nóng</a>
+            </li>
+            <li>
+                <a href="/tin-doc-quyen.htm" title="Tin độc quyền">Tin độc quyền</a>
+            </li>
+            <li class="clearfix" style="height: 150px; border: none; background: none; width: 100%;"></li>
+    </ul>
         <div id="myBtn" onclick="topFunction()"  style="display: block; bottom: 33%;"></div>
         <!-- header -->
         <div class="header">
@@ -100,34 +199,51 @@
             </div>
             <!-- menu -->
             <div class="header-menu" id="myHeader">
-              <div>
-                <ul class="menu-list">
-                    <li class="menu-item" style="height: 0;">
-                        <a href="#" title="Trang chủ" class="menu-item-link">
-                            <span class="menu-home menu-home-category"></span>
-                        </a>
+                <div class="menu-mb">
+                    <div class="menu-mb-icon" onclick="OpenMenuCategory();">
+                        <div class="menu-mb-icon-item"></div>
+                        <div class="menu-mb-icon-item"></div>
+                        <div class="menu-mb-icon-item"></div>
+                    </div>
+                    <a class="main-menu-cancel" onclick=" CloseMenuCategory();">
+                        <span class="line-1"></span>
+                        <span class="line-2"></span>
+                        <span class="line-3"></span>
+                    </a>
+                    <h1><a title="Người lao động mobile" class="fl logo" href="/">&nbsp;</a></h1>
+                    <div class="icon-item" id="abId0.3316861920615257">
+                        <a href=""><i class="fab fa-facebook icon-menu-fb"></i></a>
+                        <a href=""><i class="fab fa-youtube icon-menu-youtube"></i></a>
+                        <li class="seach-mb" id="abId0.20544386146878746" abineguid="D41A075635D842A5B4C12E7507F311DE">
+                            <span class="seach-link-mb" onclick="seachFunctionMobile();"></span>
+                            <input type="text" class="" id="search-input-mb" placeholder="Nhập từ khóa tìm kiếm">
+                        </li>
+                    </div>
+                </div>
+                <ul class="menu-list" id="abId0.4216376235257553">
+                    <li class="menu-item">
+                        <a href="#" title="Trang chủ" class="menu-item-link"><i class="fas fa-home menu-home-icon"></i></a>
                     </li>
-                    <li  style="background: rgba(0,0,0,.2);" class="menu-item"><a class="menu-item-link" href="#">Trong nước</a></li>
-                    <li class="menu-item"><a class="menu-item-link" href="#">Quốc tế</a></li>
-                    <li class="menu-item"><a class="menu-item-link" href="#">Công đoàn</a></li>
-                    <li class="menu-item"><a class="menu-item-link" href="#">Bạn đọc</a></li>
-                    <li class="menu-item"><a class="menu-item-link" href="#">Kinh tế</a></li>
-                    <li class="menu-item"><a class="menu-item-link" href="#">Sức khỏe</a></li>
-                    <li class="menu-item"><a class="menu-item-link" href="#">Giáo dục</a></li>
-                    <li class="menu-item"><a class="menu-item-link" href="#">Pháp luật</a></li>
-                    <li class="menu-item"><a class="menu-item-link" href="#">Văn nghệ</a></li>
-                    <li class="menu-item"><a class="menu-item-link" href="#">Giải trí</a></li>
-                    <li class="menu-item"><a class="menu-item-link" href="#">Thể thao</a></li>
-                    <li class="menu-item"><a class="menu-item-link" href="#">Công nghệ</a></li>
-                    <li class="menu-item"><a class="menu-item-link" href="#">Điểm đến</a></li>
-                    <li class="menu-item"><a class="menu-item-link" href="#">Phụ nữ</a></li>
-                    <li class="menu-item"><a class="menu-item-link" href="#">Địa ốc</a></li>
-                    <li class="search ">
-                        <span  class="seach-link"  onclick="seachFunction()"  id="mySeach" ></span>
+                    <li class="menu-item"><a class="menu-item-link" href="/NLD/category.html">Trong nước</a></li>
+                    <li class="menu-item"><a class="menu-item-link" href="/NLD/category.html">Quốc tế</a></li>
+                    <li class="menu-item"><a class="menu-item-link" href="/NLD/category.html">Công đoàn</a></li>
+                    <li class="menu-item"><a class="menu-item-link" href="/NLD/category.html">Bạn đọc</a></li>
+                    <li class="menu-item"><a class="menu-item-link" href="/NLD/category.html">Kinh tế</a></li>
+                    <li class="menu-item"><a class="menu-item-link" href="/NLD/category.html">Sức khỏe</a></li>
+                    <li class="menu-item"><a class="menu-item-link" href="/NLD/category.html">Giáo dục</a></li>
+                    <li class="menu-item"><a class="menu-item-link" href="/NLD/category.html">Pháp luật</a></li>
+                    <li class="menu-item"><a class="menu-item-link" href="/NLD/category.html">Văn nghệ</a></li>
+                    <li class="menu-item"><a class="menu-item-link" href="/NLD/category.html">Giải trí</a></li>
+                    <li class="menu-item"><a class="menu-item-link" href="/NLD/category.html">Thể thao</a></li>
+                    <li class="menu-item"><a class="menu-item-link" href="/NLD/category.html">Công nghệ</a></li>
+                    <li class="menu-item"><a class="menu-item-link" href="/NLD/category.html">Điểm đến</a></li>
+                    <li class="menu-item"><a class="menu-item-link" href="/NLD/category.html">Phụ nữ</a></li>
+                    <li class="menu-item"><a class="menu-item-link" href="/NLD/category.html">Địa ốc</a></li>
+                    <li class="search " id="abId0.0949856652841976" abineguid="526530EBA26445688095A1D8B3D8D339">
+                        <span class="seach-link" onclick="seachFunction()" id="mySeach"></span>
                         <input type="text" id="seach" class="search-input" placeholder="Nhập từ khóa tìm kiếm">
                     </li>
                 </ul>
-              </div>
             </div>
         
         </div>
@@ -166,6 +282,116 @@
                             </div>
                         </div>
 
+                        <!-- box Trong nước -->
+                        <div class="box-case">
+                            <div class="box-case-title">
+                                <h2 ><a  href="#" title="Trong nước">thời sự Trong nước</a></h2>
+                                <ul class="box-case-list">
+                                    <li class="box-case-item"><a  href="#">Chính trị</a></li>
+                                    <li class="box-case-item"><a href="#">Xã hội</a></li>
+                                    <li class="box-case-item"><a href="#">Miền tây</a></li>
+                                    <li class="box-case-item"><a href="#">Hà nội</a></li>
+                                    <li class="box-case-item"><a href="#">Miền trung</a></li>
+                                    <li class="box-case-item"><a href="#">Tây nguyên</a></li>
+                                    <li class="box-case-item"><a href="#">Phóng sự-bút ký</a></li>
+                                    <li class="box-case-item"><a href="#">Biển đảo</a></li>
+                                </ul>
+                                <a href="javascript:;"  title="Danh mục Thời sự trong nước" class="navigation-cate">
+                                    <span class="block-1"></span>
+                                    <span class="block-2"></span>
+                                    <span class="block-3"></span>
+                                    <span class="block-4"></span>
+                                </a>
+                                <ul class="list-cate list-cate-mb"  >
+                
+                                    <li style="border-top: 1px solid #eee;">
+                                        <a href="/euro-2020/tin-euro.htm" title="Tin EURO">Tin EURO</a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="/euro-2020/nhan-dinh-goc-chuyen-gia.htm" title="Nhận định &amp; góc chuyên gia">Nhận định &amp; góc chuyên gia</a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="/euro-2020/ngoi-sao-euro.htm" title="Ngôi sao EURO">Ngôi sao EURO</a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="/euro-2020/keo-ti-so.htm" title="Kèo - tỉ số">Kèo - tỉ số</a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="/euro-2020/lich-thi-dau.htm" title="Lịch thi đấu">Lịch thi đấu</a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="/euro-2020/du-doan-trung-thuong.htm" title="Dự đoán trúng thưởng">Dự đoán trúng thưởng</a>
+                                    </li>
+                                
+                                </ul>
+                                
+                            </div>
+                            <div class="box-case-content">
+                                <div class="box-case-left">
+                                    <a href="#" class="">
+                                        <img src="https://nld.mediacdn.vn/zoom/256_160/291774122806476800/2021/6/10/198823472324261309249445804358920013186024n-1623328125846556567015.jpg"  alt="">
+                                    </a>
+                                    <h3>
+                                        <a href="#"title="">Chánh án TAND tỉnh Đắk Nông lên tiếng việc 1 thẩm phán lập 57 hồ sơ khống</a>
+                                    </h3>
+                                    <p>(NLĐO) - Theo Chánh án TAND tỉnh Đắk Nông, liên quan đến vụ việc 1 thẩm phán lập 57 hồ sơ khống, các nguyên lãnh đạo TAND huyện Đắk Song bị kỷ luật khiển trách là nghiêm.</p>
+                                </div>
+
+                                <div class="box-case-center">
+                                    <ul class="box-case-center-list">
+                                        <li class="box-case-center-item">
+                                            <a href="#">
+                                                <img src="https://nld.mediacdn.vn/zoom/114_71/291774122806476800/2021/6/4/base64-16228138855061481972302.png" alt="123">
+                                            </a>
+                                            <a href="#" title="Vải thiều tràn ngập thị trường trái cây TP HCM">
+                                                <p title="Quảng Nam dừng kiểm soát, cách ly người về từ Đà Nẵng">Quảng Nam dừng kiểm soát, cách ly người về từ Đà Nẵng</p>
+                                            </a>
+                                        </li>
+                                        <li class="box-case-center-item">
+                                            <a href="#">
+                                                <img src="https://nld.mediacdn.vn/zoom/114_71/291774122806476800/2021/4/30/anh-9-16197734511951567874519.jpg" alt="123">
+                                            </a>
+                                            <a href="#" title="Những hoạt động nào ở Huế được nới lỏng kể từ ngày 11-6?">
+                                                <p title="Những hoạt động nào ở Huế được nới lỏng kể từ ngày 11-6?">Những hoạt động nào ở Huế được nới lỏng kể từ ngày 11-6?</p>
+                                            </a>
+                                        </li>
+                                        <li  style="display: none !important;"  class="box-case-center-item box-case-center-item-mb box-case-center-item-mb-fl">
+                                            <a href="#">
+                                                <img src="https://nld.mediacdn.vn/zoom/330_248/291774122806476800/2021/6/26/c2-1624697454306380797175.jpg" alt="123">
+                                            </a>
+                                            <a href="#" title="Sát cánh doanh nghiệp để đạt mục tiêu kép">
+                                                <p title="Sát cánh doanh nghiệp để đạt mục tiêu kép">Toàn tỉnh Phú Yên thực hiện giãn cách xã hội</p>
+                                            </a>
+                                        </li>
+                                        <li style="display: none;" class="box-case-center-item box-case-center-item-mb-none">
+                                            <a href="#">
+                                                <img src="https://nld.mediacdn.vn/zoom/330_248/291774122806476800/2021/6/26/screenshot20200213-0921582-15815660976051246842597-1624692588870310853633.png" alt="123">
+                                            </a>
+                                            <a href="#" title="Sát cánh doanh nghiệp để đạt mục tiêu kép">
+                                                <p title="Sát cánh doanh nghiệp để đạt mục tiêu kép">Phó Giám đốc Trung tâm Y tế mắc Covid-19 nhưng không khai báo lịch trình</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="box-case-right">
+                                    <div style="margin-bottom: 30px;">
+                                        <a href="/#" title="Câu chuyện hôm nay" class="box-case-right-title">Câu chuyện hôm nay</a>
+                                    </div>
+                                    <a class="" href="#"><img class="box-case-right-img" src="https://nld.mediacdn.vn/zoom/208_130/291774122806476800/2021/6/10/atm-16232853906231267307526.jpg" alt=""></a>
+                                    <div class="box-case-right-content">
+                                        <h3><a href="#"  title="Tài sản của Jeff Bezos lại vượt 200 tỷ USD" >Tài sản của Jeff Bezos lại vượt 200 tỷ USD</a></h3>
+                                    <p>Tài sản của người giàu nhất thế giới Jeff Bezos vừa một lần nữa vượt mốc 200 tỷ USD khi giá cổ phiếu Amazon tăng mạnh trong phiên giao dịch ...</p>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+
                         <span class="border"></span>
 
                         <div class="app-news-container">
@@ -175,6 +401,7 @@
                                         <img class="box-news-img" src="https://nld.mediacdn.vn/zoom/220_139/291774122806476800/2021/6/15/vnapotalthuongtuongphanvangiangducuocgapbotruongquocphongasean-trungquoc161749713stand-1623757832248122713223.jpg" alt="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
                                         <div class="box-news-content">
                                             <a href="./detail.html"><h3 class="box-title">Ủng hộ lập đường dây nóng Bộ trưởng Quốc phòng ASEAN - Trung Quốc</h3></a>
+                                            <p class="box-case-center-item-vertical-time">24/06/2021 13:02</p>
                                             <a class="news-content-title" href="./detail.html" title="Những đôi bàn tay nhăn nheo, trắng bệch vì ngâm mồ hôi trong bộ đồ bảo hộ chống dịch" >Những đôi bàn tay nhăn nheo, trắng bệch vì "ngâm mồ hôi" trong bộ đồ bảo hộ chống dịch</a>
                                             <a class="news-content-title" href="./detail.html" title="Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch" >Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch</a>
                                         </div>
@@ -185,6 +412,7 @@
                                         <img class="box-news-img" src="https://nld.mediacdn.vn/zoom/220_139/291774122806476800/2021/6/15/chu-tich-nguyen-thanh-phong-1623763528368655440763.jpg" alt="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
                                         <div class="box-news-content">
                                             <a href="./detail.html"><h3 class="box-title">Chủ tịch UBND TP HCM: Đẩy nhanh việc mua và tiêm vắc-xin Covid-19 cho người dân</h3></a>
+                                            <p class="box-case-center-item-vertical-time">24/06/2021 13:02</p>
                                             <a class="news-content-title" href="./detail.html" title="Những đôi bàn tay nhăn nheo, trắng bệch vì ngâm mồ hôi trong bộ đồ bảo hộ chống dịch" >Những đôi bàn tay nhăn nheo, trắng bệch vì "ngâm mồ hôi" trong bộ đồ bảo hộ chống dịch</a>
                                             <a class="news-content-title" href="./detail.html" title="Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch" >Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch</a>
                                         </div>
@@ -195,6 +423,7 @@
                                         <img class="box-news-img" src="https://nld.mediacdn.vn/zoom/220_139/291774122806476800/2021/6/15/anh-chup-man-hinh-2021-06-15-luc-201817-16237632106771868488540.png" alt="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
                                         <div class="box-news-content">
                                             <a href="./detail.html"><h3 class="box-title">Báo điện tử Pháp luật TP HCM, Thanh Niên bị tấn công mạng gây gián đoạn truy cập</h3></a>
+                                            <p class="box-case-center-item-vertical-time">24/06/2021 13:02</p>
                                             <a class="news-content-title" href="./detail.html" title="Những đôi bàn tay nhăn nheo, trắng bệch vì ngâm mồ hôi trong bộ đồ bảo hộ chống dịch" >Những đôi bàn tay nhăn nheo, trắng bệch vì "ngâm mồ hôi" trong bộ đồ bảo hộ chống dịch</a>
                                             <a class="news-content-title" href="./detail.html" title="Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch" >Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch</a>
                                         </div>
@@ -205,6 +434,7 @@
                                         <img class="box-news-img" src="https://nld.mediacdn.vn/zoom/220_139/291774122806476800/2021/6/15/tiem-1623763160480201228274.jpeg" alt="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
                                         <div class="box-news-content">
                                             <a href="./detail.html"><h3 class="box-title">Chính phủ đồng ý với đề nghị của TP HCM về mua và nhập vắc-xin Covid-19</h3></a>
+                                            <p class="box-case-center-item-vertical-time">24/06/2021 13:02</p>
                                             <a class="news-content-title" href="./detail.html" title="Những đôi bàn tay nhăn nheo, trắng bệch vì ngâm mồ hôi trong bộ đồ bảo hộ chống dịch" >Những đôi bàn tay nhăn nheo, trắng bệch vì "ngâm mồ hôi" trong bộ đồ bảo hộ chống dịch</a>
                                             <a class="news-content-title" href="./detail.html" title="Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch" >Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch</a>
                                         </div>
@@ -215,6 +445,27 @@
                                         <img class="box-news-img" src="https://nld.mediacdn.vn/zoom/220_139/291774122806476800/2021/6/15/benh-1623760314905563890466.jpeg" alt="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
                                         <div class="box-news-content">
                                             <a href="./detail.html"><h3 class="box-title">Tối 15-6, thêm 213 ca Covid-19, số người khỏi bệnh kỷ lục</h3></a>
+                                            <p class="box-case-center-item-vertical-time">24/06/2021 13:02</p>
+                                            
+                                            <a class="news-content-title" href="./detail.html" title="Những đôi bàn tay nhăn nheo, trắng bệch vì ngâm mồ hôi trong bộ đồ bảo hộ chống dịch" >Những đôi bàn tay nhăn nheo, trắng bệch vì "ngâm mồ hôi" trong bộ đồ bảo hộ chống dịch</a>
+                                            <a class="news-content-title" href="./detail.html" title="Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch" >Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch</a>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="box-news-list-img">
+                                    <div class="box-news-list-img-title">
+                                        CLIP: Hàng loạt biệt thự bỏ hoang, khu đô thị ở Hà Nội thành nơi chăn thả bò
+                                    </div>
+                                    <div class="time">24/06/2021 13:02</div>
+                                </div>
+
+                                <div class="box-news-list">
+                                    <a class="box-news-link" href="./detail.html" title="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
+                                        <img class="box-news-img" src="https://nld.mediacdn.vn/zoom/220_139/291774122806476800/2021/6/15/giam-doc-so-y-te-16237541727641962254424.jpg" alt="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
+                                        <div class="box-news-content">
+                                            <a href="./detail.html"><h3 class="box-title">Kỷ luật nguyên Giám đốc Công an tỉnh Gia Lai Vũ Văn Lâu</h3></a>
+                                            <p class="box-case-center-item-vertical-time">24/06/2021 13:02</p>
+      
                                             <a class="news-content-title" href="./detail.html" title="Những đôi bàn tay nhăn nheo, trắng bệch vì ngâm mồ hôi trong bộ đồ bảo hộ chống dịch" >Những đôi bàn tay nhăn nheo, trắng bệch vì "ngâm mồ hôi" trong bộ đồ bảo hộ chống dịch</a>
                                             <a class="news-content-title" href="./detail.html" title="Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch" >Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch</a>
                                         </div>
@@ -225,6 +476,8 @@
                                         <img class="box-news-img" src="https://nld.mediacdn.vn/zoom/220_139/291774122806476800/2021/6/15/giam-doc-so-y-te-16237541727641962254424.jpg" alt="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
                                         <div class="box-news-content">
                                             <a href="./detail.html"><h3 class="box-title">Kỷ luật nguyên Giám đốc Công an tỉnh Gia Lai Vũ Văn Lâu</h3></a>
+                                            <p class="box-case-center-item-vertical-time">24/06/2021 13:02</p>
+      
                                             <a class="news-content-title" href="./detail.html" title="Những đôi bàn tay nhăn nheo, trắng bệch vì ngâm mồ hôi trong bộ đồ bảo hộ chống dịch" >Những đôi bàn tay nhăn nheo, trắng bệch vì "ngâm mồ hôi" trong bộ đồ bảo hộ chống dịch</a>
                                             <a class="news-content-title" href="./detail.html" title="Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch" >Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch</a>
                                         </div>
@@ -235,6 +488,8 @@
                                         <img class="box-news-img" src="https://nld.mediacdn.vn/zoom/220_139/291774122806476800/2021/6/15/giam-doc-so-y-te-16237541727641962254424.jpg" alt="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
                                         <div class="box-news-content">
                                             <a href="./detail.html"><h3 class="box-title">Kỷ luật nguyên Giám đốc Công an tỉnh Gia Lai Vũ Văn Lâu</h3></a>
+                                            <p class="box-case-center-item-vertical-time">24/06/2021 13:02</p>
+      
                                             <a class="news-content-title" href="./detail.html" title="Những đôi bàn tay nhăn nheo, trắng bệch vì ngâm mồ hôi trong bộ đồ bảo hộ chống dịch" >Những đôi bàn tay nhăn nheo, trắng bệch vì "ngâm mồ hôi" trong bộ đồ bảo hộ chống dịch</a>
                                             <a class="news-content-title" href="./detail.html" title="Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch" >Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch</a>
                                         </div>
@@ -245,6 +500,8 @@
                                         <img class="box-news-img" src="https://nld.mediacdn.vn/zoom/220_139/291774122806476800/2021/6/15/giam-doc-so-y-te-16237541727641962254424.jpg" alt="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
                                         <div class="box-news-content">
                                             <a href="./detail.html"><h3 class="box-title">Kỷ luật nguyên Giám đốc Công an tỉnh Gia Lai Vũ Văn Lâu</h3></a>
+                                            <p class="box-case-center-item-vertical-time">24/06/2021 13:02</p>
+      
                                             <a class="news-content-title" href="./detail.html" title="Những đôi bàn tay nhăn nheo, trắng bệch vì ngâm mồ hôi trong bộ đồ bảo hộ chống dịch" >Những đôi bàn tay nhăn nheo, trắng bệch vì "ngâm mồ hôi" trong bộ đồ bảo hộ chống dịch</a>
                                             <a class="news-content-title" href="./detail.html" title="Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch" >Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch</a>
                                         </div>
@@ -255,16 +512,8 @@
                                         <img class="box-news-img" src="https://nld.mediacdn.vn/zoom/220_139/291774122806476800/2021/6/15/giam-doc-so-y-te-16237541727641962254424.jpg" alt="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
                                         <div class="box-news-content">
                                             <a href="./detail.html"><h3 class="box-title">Kỷ luật nguyên Giám đốc Công an tỉnh Gia Lai Vũ Văn Lâu</h3></a>
-                                            <a class="news-content-title" href="./detail.html" title="Những đôi bàn tay nhăn nheo, trắng bệch vì ngâm mồ hôi trong bộ đồ bảo hộ chống dịch" >Những đôi bàn tay nhăn nheo, trắng bệch vì "ngâm mồ hôi" trong bộ đồ bảo hộ chống dịch</a>
-                                            <a class="news-content-title" href="./detail.html" title="Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch" >Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch</a>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="box-news-list">
-                                    <a class="box-news-link" href="./detail.html" title="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
-                                        <img class="box-news-img" src="https://nld.mediacdn.vn/zoom/220_139/291774122806476800/2021/6/15/giam-doc-so-y-te-16237541727641962254424.jpg" alt="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
-                                        <div class="box-news-content">
-                                            <a href="./detail.html"><h3 class="box-title">Kỷ luật nguyên Giám đốc Công an tỉnh Gia Lai Vũ Văn Lâu</h3></a>
+                                            <p class="box-case-center-item-vertical-time">24/06/2021 13:02</p>
+      
                                             <a class="news-content-title" href="./detail.html" title="Những đôi bàn tay nhăn nheo, trắng bệch vì ngâm mồ hôi trong bộ đồ bảo hộ chống dịch" >Những đôi bàn tay nhăn nheo, trắng bệch vì "ngâm mồ hôi" trong bộ đồ bảo hộ chống dịch</a>
                                             <a class="news-content-title" href="./detail.html" title="Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch" >Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch</a>
                                         </div>
@@ -273,6 +522,11 @@
                                 <button class="btn-seemore">Xem thêm</button>
 
                             </div>
+
+                        
+
+
+
                             <div class="app-news-container-right">
                                <div style="margin-bottom: 40px;">
                                     <h2 class="fl">
@@ -343,6 +597,171 @@
                             </div>
                             
                         </div>
+
+                        <!-- box Trong nước -->
+                        <div class="box-case" style="padding:0 17px !important;">
+                            <div class="box-case-title">
+                                <h2 style="margin-left: 0 !important;" ><a  href="#" title="Trong nước">thời sự Trong nước</a></h2>
+                            </div>
+                            <div class="box-case-content">
+
+
+                                <div class="box-case-center box-case-center-mb" style="padding: 0 !important;">
+                                    <ul class="box-case-center-list">
+                                        <li class="box-case-center-item">
+                                            <a href="#">
+                                                <img src="https://nld.mediacdn.vn/zoom/330_248/291774122806476800/2021/6/27/lamgif631-1624764992020932078726.gif" alt="123">
+                                            </a>
+                                            <a href="#" title="Vải thiều tràn ngập thị trường trái cây TP HCM">
+                                                <p title="Quảng Nam dừng kiểm soát, cách ly người về từ Đà Nẵng">Xác định được "binh đoàn" xe ben chạy 90km/ giờ vượt đèn đỏ tại trung tâm TP HCM</p>
+                                            </a>
+                                        </li>
+                                        <li class="box-case-center-item">
+                                            <a href="#">
+                                                <img src="https://nld.mediacdn.vn/zoom/330_248/291774122806476800/2021/6/27/2035394571340040321388098236913743803127743n-16247531164061447013118.jpg" alt="123">
+                                            </a>
+                                            <a href="#" title="Những hoạt động nào ở Huế được nới lỏng kể từ ngày 11-6?">
+                                                <p title="Những hoạt động nào ở Huế được nới lỏng kể từ ngày 11-6?">Nhiều xe khách giường nằm cháy ngùn ngụt tại bến</p>
+                                            </a>
+                                        </li>   
+                                        <li  style="display: block !important;"  class="box-case-center-item box-case-center-item-mb box-case-center-item-mb-fl">
+                                            <a href="#">
+                                                <img src="https://nld.mediacdn.vn/zoom/330_248/291774122806476800/2021/6/26/img8117-1624713466301395673480.jpg" alt="123">
+                                            </a>
+                                            <a href="#" title="Sát cánh doanh nghiệp để đạt mục tiêu kép">
+                                                <p title="Sát cánh doanh nghiệp để đạt mục tiêu kép">Phong tỏa con hẻm 50 hộ dân do nghi một gia đình mắc Covid-19 ở TP Thủ Đức</p>
+                                            </a>
+                                        </li>
+                                        <li style="display: block !important;" class="box-case-center-item box-case-center-item-mb-none">
+                                            <a href="#">
+                                                <img src="https://nld.mediacdn.vn/zoom/330_248/291774122806476800/2021/6/26/screenshot20200213-0921582-15815660976051246842597-1624692588870310853633.png" alt="123">
+                                            </a>
+                                            <a href="#" title="Sát cánh doanh nghiệp để đạt mục tiêu kép">
+                                                <p title="Sát cánh doanh nghiệp để đạt mục tiêu kép">Phó Giám đốc Trung tâm Y tế mắc Covid-19 nhưng không khai báo lịch trình</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="box-case-center box-case-center-mb" style="padding: 0 !important;">
+                                    <ul class="box-case-center-list">
+                                        <li class="box-case-center-item">
+                                            <a href="#">
+                                                <img src="https://nld.mediacdn.vn/zoom/330_248/291774122806476800/2021/6/26/kostas-sarantidis-qua-doi-1624716269323953527104.jpg" alt="123">
+                                            </a>
+                                            <a href="#" title="Vải thiều tràn ngập thị trường trái cây TP HCM">
+                                                <p title="Quảng Nam dừng kiểm soát, cách ly người về từ Đà Nẵng">Chủ tịch nước chia buồn Anh hùng lực lượng vũ trang Kostas 
+                                                    Sarantidis Nguyễn Văn Lập từ trần</p>
+                                            </a>
+                                        </li>
+                                        <li class="box-case-center-item">
+                                            <a href="#">
+                                                <img src="https://nld.mediacdn.vn/zoom/330_248/291774122806476800/2021/6/27/l1-16247825141771453979618.jpg" alt="123">
+                                            </a>
+                                            <a href="#" title="Những hoạt động nào ở Huế được nới lỏng kể từ ngày 11-6?">
+                                                <p title="Những hoạt động nào ở Huế được nới lỏng kể từ ngày 11-6?">Thông tin cụ thể vụ "mắc Covid-19 nhưng không khai báo lịch trình” ở Bình Thuận</p>
+                                            </a>
+                                        </li>
+                                        <li  style="display: block !important;"  class="box-case-center-item box-case-center-item-mb box-case-center-item-mb-fl">
+                                            <a href="#">
+                                                <img src="https://nld.mediacdn.vn/zoom/330_248/291774122806476800/2021/6/26/y1-16247152018861634994505.png" alt="123">
+                                            </a>
+                                            <a href="#" title="Sát cánh doanh nghiệp để đạt mục tiêu kép">
+                                                <p title="Sát cánh doanh nghiệp để đạt mục tiêu kép">Thông tin dịch tễ của bệnh nhân là Phó giám đốc Trung tâm Y tế huyện Tuy Phong</p>
+                                            </a>
+                                        </li>
+                                        <li style="display: block;" class="box-case-center-item box-case-center-item-mb-none">
+                                            <a href="#">
+                                                <img src="https://nld.mediacdn.vn/zoom/330_248/291774122806476800/2021/6/27/cachly-1624772028373528359654.jpg" alt="123">
+                                            </a>
+                                            <a href="#" title="Sát cánh doanh nghiệp để đạt mục tiêu kép">
+                                                <p title="Sát cánh doanh nghiệp để đạt mục tiêu kép">TP HCM thí điểm cách ly y tế F1 tại nhà</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                
+
+                               
+                            </div>
+                        </div>
+
+                        <div class="app-news-container-left app-news-container-left-mb">
+                            <div class="box-news-list">
+                                <a class="box-news-link" href="./detail.html" title="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
+                                    <img class="box-news-img" src="https://nld.mediacdn.vn/zoom/220_139/291774122806476800/2021/6/15/vnapotalthuongtuongphanvangiangducuocgapbotruongquocphongasean-trungquoc161749713stand-1623757832248122713223.jpg" alt="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
+                                    </a><div class="box-news-content"><a class="box-news-link" href="./detail.html" title="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
+                                        </a><a href="./detail.html"><h3 class="box-title">Ủng hộ lập đường dây nóng Bộ trưởng Quốc phòng ASEAN - Trung Quốc</h3></a>
+                                        <p class="box-case-center-item-vertical-time">24/06/2021 13:02</p>
+                                        <a class="news-content-title" href="./detail.html" title="Những đôi bàn tay nhăn nheo, trắng bệch vì ngâm mồ hôi trong bộ đồ bảo hộ chống dịch">Những đôi bàn tay nhăn nheo, trắng bệch vì "ngâm mồ hôi" trong bộ đồ bảo hộ chống dịch</a>
+                                        <a class="news-content-title" href="./detail.html" title="Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch">Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch</a>
+                                    </div>
+                                
+                            </div>
+                            <div class="box-news-list">
+                                <a class="box-news-link" href="./detail.html" title="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
+                                    <img class="box-news-img" src="https://nld.mediacdn.vn/zoom/220_139/291774122806476800/2021/6/15/chu-tich-nguyen-thanh-phong-1623763528368655440763.jpg" alt="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
+                                    </a><div class="box-news-content"><a class="box-news-link" href="./detail.html" title="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
+                                        </a><a href="./detail.html"><h3 class="box-title">Chủ tịch UBND TP HCM: Đẩy nhanh việc mua và tiêm vắc-xin Covid-19 cho người dân</h3></a>
+                                        <p class="box-case-center-item-vertical-time">24/06/2021 13:02</p>
+                                        <a class="news-content-title" href="./detail.html" title="Những đôi bàn tay nhăn nheo, trắng bệch vì ngâm mồ hôi trong bộ đồ bảo hộ chống dịch">Những đôi bàn tay nhăn nheo, trắng bệch vì "ngâm mồ hôi" trong bộ đồ bảo hộ chống dịch</a>
+                                        <a class="news-content-title" href="./detail.html" title="Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch">Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch</a>
+                                    </div>
+                                
+                            </div>
+                            <div class="box-news-list">
+                                <a class="box-news-link" href="./detail.html" title="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
+                                    <img class="box-news-img" src="https://nld.mediacdn.vn/zoom/220_139/291774122806476800/2021/6/15/anh-chup-man-hinh-2021-06-15-luc-201817-16237632106771868488540.png" alt="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
+                                    </a><div class="box-news-content"><a class="box-news-link" href="./detail.html" title="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
+                                        </a><a href="./detail.html"><h3 class="box-title">Báo điện tử Pháp luật TP HCM, Thanh Niên bị tấn công mạng gây gián đoạn truy cập</h3></a>
+                                        <p class="box-case-center-item-vertical-time">24/06/2021 13:02</p>
+                                        <a class="news-content-title" href="./detail.html" title="Những đôi bàn tay nhăn nheo, trắng bệch vì ngâm mồ hôi trong bộ đồ bảo hộ chống dịch">Những đôi bàn tay nhăn nheo, trắng bệch vì "ngâm mồ hôi" trong bộ đồ bảo hộ chống dịch</a>
+                                        <a class="news-content-title" href="./detail.html" title="Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch">Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch</a>
+                                    </div>
+                                
+                            </div>
+                            <div class="box-news-list">
+                                <a class="box-news-link" href="./detail.html" title="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
+                                    <img class="box-news-img" src="https://nld.mediacdn.vn/zoom/220_139/291774122806476800/2021/6/15/tiem-1623763160480201228274.jpeg" alt="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
+                                    </a><div class="box-news-content"><a class="box-news-link" href="./detail.html" title="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
+                                        </a><a href="./detail.html"><h3 class="box-title">Chính phủ đồng ý với đề nghị của TP HCM về mua và nhập vắc-xin Covid-19</h3></a>
+                                        <p class="box-case-center-item-vertical-time">24/06/2021 13:02</p>
+                                        <a class="news-content-title" href="./detail.html" title="Những đôi bàn tay nhăn nheo, trắng bệch vì ngâm mồ hôi trong bộ đồ bảo hộ chống dịch">Những đôi bàn tay nhăn nheo, trắng bệch vì "ngâm mồ hôi" trong bộ đồ bảo hộ chống dịch</a>
+                                        <a class="news-content-title" href="./detail.html" title="Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch">Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch</a>
+                                    </div>
+                                
+                            </div>
+                            <div class="box-news-list">
+                                <a class="box-news-link" href="./detail.html" title="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
+                                    <img class="box-news-img" src="https://nld.mediacdn.vn/zoom/220_139/291774122806476800/2021/6/15/benh-1623760314905563890466.jpeg" alt="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
+                                    </a><div class="box-news-content"><a class="box-news-link" href="./detail.html" title="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
+                                        </a><a href="./detail.html"><h3 class="box-title">Tối 15-6, thêm 213 ca Covid-19, số người khỏi bệnh kỷ lục</h3></a>
+                                        <p class="box-case-center-item-vertical-time">24/06/2021 13:02</p>
+                                        
+                                        <a class="news-content-title" href="./detail.html" title="Những đôi bàn tay nhăn nheo, trắng bệch vì ngâm mồ hôi trong bộ đồ bảo hộ chống dịch">Những đôi bàn tay nhăn nheo, trắng bệch vì "ngâm mồ hôi" trong bộ đồ bảo hộ chống dịch</a>
+                                        <a class="news-content-title" href="./detail.html" title="Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch">Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch</a>
+                                    </div>
+                                
+                            </div>
+
+                            <div class="box-news-list">
+                                <a class="box-news-link" href="./detail.html" title="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
+                                    <img class="box-news-img" src="https://nld.mediacdn.vn/zoom/220_139/291774122806476800/2021/6/15/giam-doc-so-y-te-16237541727641962254424.jpg" alt="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
+                                    </a><div class="box-news-content"><a class="box-news-link" href="./detail.html" title="Nữ điều dưỡng xinh đẹp hy sinh mái tóc mượt mà xung phong vào tâm dịch">
+                                        </a><a href="./detail.html"><h3 class="box-title">Kỷ luật nguyên Giám đốc Công an tỉnh Gia Lai Vũ Văn Lâu</h3></a>
+                                        <p class="box-case-center-item-vertical-time">24/06/2021 13:02</p>
+  
+                                        <a class="news-content-title" href="./detail.html" title="Những đôi bàn tay nhăn nheo, trắng bệch vì ngâm mồ hôi trong bộ đồ bảo hộ chống dịch">Những đôi bàn tay nhăn nheo, trắng bệch vì "ngâm mồ hôi" trong bộ đồ bảo hộ chống dịch</a>
+                                        <a class="news-content-title" href="./detail.html" title="Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch">Mồ hôi ròng ròng, bỏng rát trong bộ đồ bảo hộ dưới nắng nóng gần 40 độ C ở tâm dịch</a>
+                                    </div>
+                                
+                            </div>
+                            <button class="btn-seemore">Xem thêm</button>
+
+                        </div>
+                        <a rel="nofollow" href="#" class="view_more ">
+                            Xem thêm<span class="fr aright_ico">&nbsp;</span>
+                        </a>
                        
                     </div>
 
@@ -457,9 +876,34 @@
                 <p>Bản quyền thuộc về Báo Người Lao Động. Các website khác đã được chúng tôi đồng ý cho khai thác thông tin, khi đăng lại phải ghi rõ nguồn: Theo Báo Người Lao Động (www.nld.com.vn).</p>
             </div>
         </div>
+        <div class="footer-menu-mb ">
+            <ul class="footer-nav">
+                <li class="item">
+                    <a href="/" title="Trang chủ" class="home-mb icon-mb-active">Home
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="/tin-xem-nhieu.htm" title="Xem nhiều" class="most-view-mb">Xem nhiều
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="/tin-moi-nhat.htm" title="Tin nóng" class="hot-news-mb" style="display: block;">Tin nóng
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="https://tv.nld.com.vn/" title="Media" target="_blank" rel="nofollow" class="media-mb">Media
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="/longform.htm" title="Emagazine" class="emagazine-mb">E-magazine
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 
 </body>
 <script src="./assets/js/js.js">
 </script>
+<script src="./assets/js/app.js"></script>
 </html>

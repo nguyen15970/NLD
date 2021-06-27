@@ -239,7 +239,7 @@ function stopAudio(){
 
 
 function OpenMenuCategory(){
-    var x =document.querySelector(".menu-mb-icon")
+    var x =document.querySelector(".menu-mb-icon")  
     var y =  document.querySelector(".box-menu-mb")
     var z = document.querySelector(".main-menu-cancel")
     y.classList.add("box-menu-mb-active")
