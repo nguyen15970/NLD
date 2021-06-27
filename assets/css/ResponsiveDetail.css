@@ -1,0 +1,228 @@
+@media (min-width:1024px){
+    .box-case{
+        display: none;
+    }
+    .title-time-detail-mb{
+        display: none;
+    }
+    .box-news-list-img{
+        display: none;
+    }
+    .btnLoadMore {
+        display: none !important;
+    }
+}
+@media (max-width:739px){
+    .app-content-left-title{
+        display: none;
+    }
+    .row-detail{
+        display: block;
+        padding: 10px;
+    }
+    .detail-box{
+        width: 100%;
+        padding-top: 0;
+    }
+    .detail-box-content{
+        display: block;
+    }
+    .detail-share-fb{
+        display: none;
+    }
+    .detail-share-like{
+        display: none;
+    }
+    .detail-box-left{
+        width: 100%;
+        margin: 0;
+    }
+    .detail-icon{
+        justify-content: flex-end;
+    }
+    .audio audio{
+        width: 285px !important;
+        height: 28px !important;
+        top: 20px;
+        left: 10px;
+    }
+    .box-case{
+        margin-bottom: 0;
+    }
+    .box-case-title{
+        padding-left: 0;
+    }
+    .box-case-title h2{
+        margin-left: 10px;
+    }
+    .list-cate-mb{
+        left: 7px !important;
+        top: 27px !important;
+        z-index: 99999;
+    }
+    .app-news-container-right{
+        display: none;
+    }
+    .keyword{
+        padding: 0;
+        margin-top: 0;
+    }
+    .keyword p{
+        width: 18%;
+        margin-right: 8px;
+    }
+    .keyword-list{
+        flex-wrap: wrap;
+        justify-content: unset;
+    }
+    .box-newsrelate{
+        margin: 0;
+    }
+    .box-newsrelate-list{
+        flex-wrap: wrap;
+    }
+    .box-newsrelate-item{
+        width: calc((100% - 15px)/2);
+        margin-bottom: 15px;
+    }
+    .box-newsrelate-link{
+        font-weight: normal;
+    }
+    .seecomment-p{
+        display:none;
+    }
+    .comment{
+        background: transparent;
+        padding: 0;
+        height: auto !important;
+    }
+    .comment-new{
+        display: none;
+    }
+    .comment input{
+        width: 100%;
+        background: #eee;
+    }
+    .comment-mb{
+        padding: 0 !important;
+
+    }
+    .seecomment-btn{
+        margin-right: 0;
+        margin-left: 287px;
+    }
+    .border-bottom{
+        display: none;
+    }
+    .box-categories{
+        padding: 0;
+    }
+    .time{
+        display: none;
+    }
+    .box-categories-hot-news{
+        padding: 0;
+        margin-top: 25px;
+    }
+    .categories-hot-news-content{
+        width: 100%;
+        margin-top: 10px;
+        padding: 0 20px 20px;
+        background-color: #222;
+    }
+    .hot-news-row-list{
+        flex-wrap: wrap;
+    }
+    .hot-news-row-item{
+        width: calc((100% - 15px)/2);
+    }
+    .hot-news-row-item a >img{
+        width: 100%;
+    }
+    .hot-news-row-content{
+        color: #fff !important ;
+    }
+    .box-category-news{
+        width: 100%;
+        padding: 0;
+    }
+    .box-category-news-content-item p{
+        display: none;
+    }
+    .box-category-news-content-item-link img{
+        width: 135px;
+        height: 85px;
+        border-radius: 7px;
+    }
+    .box-category-news-content-item h3{
+        font-size: 15px;
+        font-weight: normal;
+    }
+    .title-time-detail-mb{
+        margin-left: 0;
+        color: rgb(179, 176, 176) !important;
+    }
+    .box-category-dont-miss{
+        background: transparent;
+    }
+    .title-dont-miss{
+        color: #333 !important;
+    }
+    .box-category-dont-miss-info{
+        border-bottom: 1px solid #eee;
+
+    }
+    .box-category-dont-miss-info::before{
+        display: none;
+    }
+    .box-category-dont-miss-info-list{
+        overflow-x: auto;
+    }
+    .box-category-dont-miss-info-list::-webkit-scrollbar{
+        width: 0;
+    }
+    .swiper-pagination{
+        display: none;
+    }
+    .button-next{
+        display: none;
+    }
+    .button-prev{
+        display: none;
+    }
+    .box-category-dont-miss-info-item{
+        margin-left: 0 !important;
+        min-width: 210px !important;
+        margin-right: 10px;
+    }
+    .box-category-dont-miss-info-item a> img{
+        width: 210px;
+        height: 158px;
+        border-radius: 4px;
+    }
+    .box-category-dont-miss-info-item a>p{
+        font-size: 1.5rem;
+        font-weight: normal;
+    }
+    .btnLoadMore {
+        text-align: center;
+        margin: 0 auto;
+        width: 100px;
+        border-radius: 30px;
+        background-color: #eee;
+        font-size: 1.4rem;
+    }
+    .header .logo{
+        position: relative;
+        top: 1px;
+    }
+    .detail{
+        overflow:hidden;
+    }
+    .header{
+        height: 0 !important;
+    }
+    .box-menu-mb-active{
+        height: calc(100vh - 45px) !important;
+    }
+}
