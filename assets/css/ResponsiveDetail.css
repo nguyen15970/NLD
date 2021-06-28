@@ -11,6 +11,9 @@
     .btnLoadMore {
         display: none !important;
     }
+    .box-category-news-content-list-mb{
+        display: none !important;
+    }
 }
 @media (max-width:739px){
     .app-content-left-title{
@@ -129,6 +132,7 @@
         margin-top: 10px;
         padding: 0 20px 20px;
         background-color: #222;
+        padding-top: 20px;
     }
     .hot-news-row-list{
         flex-wrap: wrap;
@@ -145,6 +149,7 @@
     .box-category-news{
         width: 100%;
         padding: 0;
+        margin-top: 30px;
     }
     .box-category-news-content-item p{
         display: none;
@@ -224,5 +229,8 @@
     }
     .box-menu-mb-active{
         height: calc(100vh - 45px) !important;
+    }
+    .box-categories-content{
+        display: none;
     }
 }
